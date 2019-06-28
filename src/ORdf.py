@@ -18,10 +18,10 @@ prop = URIRef('http://www.example.org/has_border_withP99')
 has_border_with = rdflib.URIRef('http://www.example.org/has_border_with')
 located_in = rdflib.URIRef('http://www.example.org/located_in')
 
-germany = rdflib.URIRef('germany')
-france = rdflib.URIRef('france')
-china = rdflib.URIRef('china')
-mongolia = rdflib.URIRef('mongolia')
+germany = rdflib.URIRef('Italia')
+france = rdflib.URIRef('Paesi_Bassi')
+china = rdflib.URIRef('Germania')
+mongolia = rdflib.URIRef('Svezia')
 
 europa = rdflib.URIRef('http://www.example.org/part1')
 asia = rdflib.URIRef('http://www.example.org/part2')
@@ -34,7 +34,7 @@ asia = rdflib.URIRef('http://www.example.org/part2')
 #g.add((mongolia,located_in,asia))
 
 # --- fn ---- 
-prop = URIRef('http://www.example.org/has_border_withP11')
+prop = URIRef('http://www.example.org/has_border_withP70')
 g.add((mongolia,prop,china))
 
 prop = URIRef('http://www.example.org/has_border_withP97')
@@ -60,13 +60,15 @@ for u,v in G.edges():
     for w in kw:
         pw = w.split('P')[1]
         #print(pw)
-    G.edges[u, v, w]["pr"] = pw
+        cento = int(pw) / 100
+    G.edges[u, v, w]["pr"] = str(cento)
 pos = nx.spring_layout(G)   
 edge_labels = nx.get_edge_attributes(G,'pr')
 #print(edge_labels)
 nx.draw_networkx_edge_labels(G, pos, labels=edge_labels,
                                 font_size=10, font_color='k', font_family='sans-serif',
-                                font_weight='normal', alpha=2.0, bbox=None, ax=None, rotate=True)
-nx.draw(G, pos=pos, with_labels=True, node_size=700) 
+                                font_weight='normal', alpha=2.0, bbox=None, ax=None, rotate=False)
+nx.draw(G, pos=pos, with_labels=True, node_size=200,font_size=13) 
+plt.title('Mondiali')
 plt.show()
 
