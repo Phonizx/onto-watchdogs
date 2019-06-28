@@ -34,15 +34,17 @@ asia = rdflib.URIRef('http://www.example.org/part2')
 #g.add((mongolia,located_in,asia))
 
 # --- fn ---- 
-prop = URIRef('http://www.example.org/has_border_withP99')
+prop = URIRef('http://www.example.org/has_border_withP11')
 g.add((mongolia,prop,china))
 
-prop = URIRef('http://www.example.org/has_border_withP65')
+prop = URIRef('http://www.example.org/has_border_withP97')
 g.add((germany,prop,france))
 
 
 
 
+prop = URIRef('http://www.example.org/has_border_withP01')
+g.add((germany,prop,china))
 #q = "select ?country where { ?country <http://www.example.org/located_in> <http://www.example.org/part2> }"
 #x = g.query(q)
 #print(list(x))
@@ -52,20 +54,19 @@ g.serialize(destination='country.xml', format='xml')
 
 
 G = rdflib_to_networkx_multidigraph(g)
-pos = nx.spring_layout(G, scale=2)
-edge_labels = nx.get_edge_attributes(G,'r')
-nx.draw_networkx_edge_labels(G, pos, labels=edge_labels)
-nx.draw(G, with_labels=True)
-
-
-
-'''
 for u,v in G.edges():
     kw = G.get_edge_data(u,v).keys()
+    pw = ""
     for w in kw:
         pw = w.split('P')[1]
-        G[u][v] = pw
-'''
-
+        #print(pw)
+    G.edges[u, v, w]["pr"] = pw
+pos = nx.spring_layout(G)   
+edge_labels = nx.get_edge_attributes(G,'pr')
+#print(edge_labels)
+nx.draw_networkx_edge_labels(G, pos, labels=edge_labels,
+                                font_size=10, font_color='k', font_family='sans-serif',
+                                font_weight='normal', alpha=2.0, bbox=None, ax=None, rotate=True)
+nx.draw(G, pos=pos, with_labels=True, node_size=700) 
 plt.show()
 
