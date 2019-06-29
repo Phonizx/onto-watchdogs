@@ -18,13 +18,13 @@ prop = URIRef('http://www.example.org/has_border_withP99')
 has_border_with = rdflib.URIRef('http://www.example.org/has_border_with')
 located_in = rdflib.URIRef('http://www.example.org/located_in')
 
-germany = rdflib.URIRef('Italia')
-france = rdflib.URIRef('Paesi_Bassi')
-china = rdflib.URIRef('Germania')
-mongolia = rdflib.URIRef('Svezia')
+italia = rdflib.URIRef('http://www.example.org/countryItalia')
+france = rdflib.URIRef('http://www.example.org/countryFrancia')
+germania = rdflib.URIRef('http://www.example.org/countryGermania')
+svezia = rdflib.URIRef('http://www.example.org/countrySvezia')
 
-europa = rdflib.URIRef('http://www.example.org/part1')
-asia = rdflib.URIRef('http://www.example.org/part2')
+europa = rdflib.URIRef('http://www.example.org/countryRomania')
+#asia = rdflib.URIRef('http://www.example.org/part2')
 
 #g.add((germany,has_border_with,france))
 #g.add((china,has_border_with,mongolia))
@@ -35,24 +35,58 @@ asia = rdflib.URIRef('http://www.example.org/part2')
 
 # --- fn ---- 
 prop = URIRef('http://www.example.org/has_border_withP70')
-g.add((mongolia,prop,china))
+g.add((svezia,prop,germania))
 
 prop = URIRef('http://www.example.org/has_border_withP97')
-g.add((germany,prop,france))
+g.add((italia,prop,france))
 
 
 
 
 prop = URIRef('http://www.example.org/has_border_withP01')
-g.add((germany,prop,china))
-#q = "select ?country where { ?country <http://www.example.org/located_in> <http://www.example.org/part2> }"
-#x = g.query(q)
-#print(list(x))
+g.add((italia,prop,germania))
 
-g.serialize(destination='country.xml', format='xml')
+prop = URIRef('http://www.example.org/has_border_withP40')
+g.add((italia,prop,europa))
+
+#q = "select ?country ?has_border_withP where { ?country ?has_border_withP <http://www.example.org/countryRomania> }"
+
+#q = "select ?country ?country1 where { ?country <http://www.example.org/has_border_withP70> ?country1 }"
+
+q = "select ?country ?has_border_withP ?country1 where { ?country ?has_border_withP ?country1 FILTER ( ?has_border_withP = <http://www.example.org/has_border_withP70>) }"
+
+#q = "select ?country where { ?country <http://www.example.org/has_border_withP70> ?country }"
+
+x = g.query(q)
+print(list(x))
 
 
 
+g.serialize(destination='country.txt', format='turtle')
+
+
+
+'''
+#enumerazione dell'intero grafo rdf [u,w,v]
+for subject,predicate,obj in g:
+    print(subject,predicate,obj)
+'''
+
+'''
+#Tests di esistenza nodi e archi 
+eu = rdflib.URIRef('Romania')
+if((None,None,eu) in g):
+    print("Romania is contained")
+
+linked = rdflib.URIRef('http://www.example.org/has_border_withP40')
+if((None,linked,None) in g):
+    print("Exists Edge")
+'''
+
+
+
+'''
+#Costruzione grafo di supporto all'RDF 
 G = rdflib_to_networkx_multidigraph(g)
 for u,v in G.edges():
     kw = G.get_edge_data(u,v).keys()
@@ -71,4 +105,4 @@ nx.draw_networkx_edge_labels(G, pos, labels=edge_labels,
 nx.draw(G, pos=pos, with_labels=True, node_size=200,font_size=13) 
 plt.title('Mondiali')
 plt.show()
-
+'''
