@@ -13,19 +13,21 @@ import re
 
 
 
-
-def pKTM(g):
+# add predicato-obj transitivo  
+def parseToGraph(g):
     dsub = {}
+    
     for s,p,o in g:
         s = s.strip().replace("//","/").split('/')
         sub = s[len(s)-1]
-
+        
         p = p.strip().replace("//","/")
         p = re.split('~|#|/',p)
         pre = p[len(p)-1]
-        o = o.strip()  
-
-       # print(sub,pre,o)#print 
+        o = o.strip().replace("//","/")
+        o = re.split('~|#|/',o)
+        o = o[len(o)-1]
+        
         if(sub  in dsub.keys()):
             if(pre in dsub[sub].keys()): #bug
                 if(type(dsub[sub][pre])  is list):
@@ -41,28 +43,30 @@ def pKTM(g):
         else:
             dsub[sub] = {}
             dsub[sub][pre] = o
-    print(dsub)
+    #print(dsub[_s])
      
 
 italia = rdflib.URIRef('http://www.example.org/cItalia')
 pr = rdflib.URIRef('http://www.example.org/~attr_prob')
-
 id = rdflib.URIRef('http://www.example.org/unique_id')
 
 
-g = Graph()
-#g.parse("/home/phinkie/Scrivania/turbo-watchdogs/src/film.xml", format="xml")
+g = ConjunctiveGraph()
+g.parse("/home/phinkie/Scrivania/turbo-watchdogs/src/film.xml", format="xml")
 
-#g.add((italia,FOAF.age,Literal(21)))
+'''
+g.add((italia,FOAF.age,Literal(21)))
 g.add((italia,FOAF.age,Literal(1)))
 g.add((italia,FOAF.name,Literal("gaston")))
 g.add((italia,FOAF.name,Literal("juan")))
-g.add((id,"http://www.example.org/attr_prob",Literal(0.90)))
- 
- 
+g.add((id,FOAF.age,Literal(0.90)))
 
-pKTM(g)
 
+g.add((italia,pr,id))
+g.add((id,RDF.value,Literal(9.0)))
+'''
+parseToGraph(g)
+ 
 
 '''
 edge_labels = [] 
