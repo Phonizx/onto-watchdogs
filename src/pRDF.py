@@ -13,47 +13,36 @@ import re
 
 
 
-def parser(g):
-    
-    sbj = {} #dizionario soggetti 
-    
-    f = True 
-    s = ""  
-    for subject,predicate,obj in g:
-        if(f == True):
-            s = subject
-            f = False
-       # print(subject,predicate,obj)
-        if(subject in sbj):
-            sbj[subject][predicate] = obj
+
+def pKTM(g):
+    dsub = {}
+    for s,p,o in g:
+        s = s.strip().replace("//","/").split('/')
+        sub = s[len(s)-1]
+
+        p = p.strip().replace("//","/")
+        p = re.split('~|#|/',p)
+        pre = p[len(p)-1]
+        o = o.strip()  
+
+       # print(sub,pre,o)#print 
+        if(sub  in dsub.keys()):
+            if(pre in dsub[sub].keys()): #bug
+                if(type(dsub[sub][pre])  is list):
+                    dsub[sub][pre].append(o)
+                else:
+                    tmp = dsub[sub][pre]
+                    del dsub[sub][pre]
+                    dsub[sub][pre] = []
+                    dsub[sub][pre].append(tmp)
+                    dsub[sub][pre].append(o)
+            else:
+                dsub[sub][pre] = o
         else:
-             sbj[subject] = {} 
-        #if(subject in sbj):
-    print(sbj[s])
-    print(s)
-
-
-def parseToGraph(g):
-    dict_attr = {}
-    sbj_list = set()
-
-    for subject,predicate,obj in g:
-        p = re.split('~|#',predicate)
-        p = p[1]
-        #print(dict_attr)
-        if(subject in dict_attr):
-            dict_attr[dict_attr.get(subject)] = obj.value
-            sbj_list.add(subject)
-        if("attr" in p):
-            p = p.split('_')[1]
-            dict_attr[obj] = p
-        
-        #print(subject,p,obj)
-        #input()
-    for s in sbj_list: #warning 
-        del dict_attr[s]
-    print(dict_attr)
-
+            dsub[sub] = {}
+            dsub[sub][pre] = o
+    print(dsub)
+     
 
 italia = rdflib.URIRef('http://www.example.org/cItalia')
 pr = rdflib.URIRef('http://www.example.org/~attr_prob')
@@ -62,16 +51,17 @@ id = rdflib.URIRef('http://www.example.org/unique_id')
 
 
 g = Graph()
-g.parse("/home/phinkie/Scrivania/turbo-watchdogs/src/film.xml", format="xml")
-'''
-g.add((italia,pr,id))
+#g.parse("/home/phinkie/Scrivania/turbo-watchdogs/src/film.xml", format="xml")
+
+#g.add((italia,FOAF.age,Literal(21)))
+g.add((italia,FOAF.age,Literal(1)))
+g.add((italia,FOAF.name,Literal("gaston")))
 g.add((italia,FOAF.name,Literal("juan")))
-g.add((id,RDF.value,Literal(0.90)))
-'''
-#parseToGraph(g)
-parser(g)
+g.add((id,"http://www.example.org/attr_prob",Literal(0.90)))
+ 
+ 
 
-
+pKTM(g)
 
 
 '''
@@ -117,5 +107,6 @@ G.add_edge(0,1,weight=4)
 G.add_edge(0,1,name="stringa as weighted")
 
 print(G.node[1]["data"].data())
+
 
 '''
