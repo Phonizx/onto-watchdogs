@@ -11,14 +11,11 @@ from rdflib.namespace import XSD
 
 import re 
 
-import xml.etree.ElementTree as ET
-
-
 entity = {}
 to_node = []  #nodi univoci di to
 
-
 '''
+import xml.etree.ElementTree as ET
 def graph_toRdf():
     root = ET.Element("rdf:RDF")
     doc = ET.SubElement(root, "rdf:Description")
@@ -30,8 +27,6 @@ def graph_toRdf():
     tree.write("serCustom.xml")
 '''
 
-
-
 #single target 
 def entity_map(p,o,target):
     if(target in o):
@@ -41,7 +36,6 @@ def entity_map(p,o,target):
             u += s[i] + "/"
         #print(u)
         entity[p] = u
-
 
 def filter(s,p,o):
     s = s.strip().replace("//","/").split('/')
@@ -53,7 +47,6 @@ def filter(s,p,o):
     o = re.split('~|#|/',o)
     o = o[len(o)-1]
     return s,p,o
-
 
 #calcola il numero dei film presenti per ogni genere e il numero totale de 
 def frequency_nodes(network):
@@ -118,14 +111,7 @@ def parseToGraph(g,_from,to,target=None):
                 network[o][to_item][0]["weight"] = w + 1
                 #print(network.get_edge_data(o,to_item))
             else:
-                network.add_edge(o,to_item,attr=p,weight=1)    
-        
-    '''
-    network.add_edge("Pixar","hoodie",weight=21)
-    network.add_edge("Pixar","buzz",weight=94)
-    print(network["Pixar"])
-    '''
-
+                network.add_edge(o,to_item,attr=p,weight=1) 
     '''
     for u,v in network.edges():
         try:
@@ -140,14 +126,8 @@ def parseToGraph(g,_from,to,target=None):
     #print(len(network.nodes()))
     return network
     
-
-
-
-
 film1 = rdflib.URIRef('http://www.example.org/tt001')
-
 film2 = rdflib.URIRef('http://www.example.org/tt002')
-
 film3 = rdflib.URIRef('http://www.example.org/tt003')
 
 attore = rdflib.URIRef('http://www.example.org/attore')
@@ -157,7 +137,6 @@ autore = rdflib.URIRef('http://www.example.org/autore')
 titolo = rdflib.URIRef('http://www.example.org/titolo') 
 
 g = ConjunctiveGraph()
-
 '''
 #path = "/home/phinkie/Scrivania/turbo-watchdogs/"
 path =  "../"
@@ -169,12 +148,12 @@ G = parseToGraph(g,["actor","director","author"],["genre"])
 g.add((film1, FOAF.age, Literal(1997)))
 g.add((film1, FOAF.name, Literal("TOY_STORY")))
 
-#info film
 g.add((film1, attore, Literal("HOODIE")))
 g.add((film1, attore, Literal("BUZZ")))
 g.add((film1, genere, Literal("CARTOON")))
 g.add((film1, direttore, Literal("DISNEY")))
 g.add((film1, autore, Literal("PIXAR")))
+g.add((film1, titolo, Literal("TOY_STORY")))
 
 #info generali TT002
 g.add((film2, FOAF.age, Literal(1999)))
@@ -184,6 +163,7 @@ g.add((film2, direttore, Literal("DISNEY")))
 g.add((film2, genere, Literal("CARTOON")))
 g.add((film2, attore, Literal("HOODIE")))
 g.add((film2, autore, Literal("ROCCO")))
+g.add((film2, titolo, Literal("TOY_STORY2")))
 """ 
 g.add((film2,direttore,Literal("http://www.imdb.com/company/RoccoAccademy")))
 g.add((film2,genere,Literal("http://www.imdb.com/genr/Porno")))
@@ -198,10 +178,14 @@ g.add((film3, direttore, Literal("ROCCOACCADEMY")))
 g.add((film3, genere, Literal("PORNO")))
 g.add((film3, attore, Literal("HOODIE")))
 g.add((film3, autore, Literal("ROCCO")))
+g.add((film3, titolo, Literal("DILDO_STORY")))
 
 
-g_parsed = parseToGraph(g, ["direttore","attore","autore"],["genere"])
+g_parsed = parseToGraph(g, ["titolo","direttore","attore","autore"],["genere"])
 
+print("********************************")
+print(frequency_nodes(g_parsed))
+print(g_parsed["CARTOON"]) 
 
 def numOutDegree(graph, node, to=None):
     #TODO: utilizzare in_degree di networkx
@@ -240,18 +224,11 @@ def probability_condition(graph, node, to): #P (A  | B)
         p = numOutDegree(graph, node, to) / numOutDegree(graph, node)
         return p
 
-def probability_priori(graph, B, N=3):
-
+def probability_priori(graph, B): 
     if B == "CARTOON":
         return 2/3
     if B == "PORNO":
         return 1/3
-
-
-    p = numOutDegree(graph, B) / N
-    print("propriori: "+str(p))
-    return p
-
 
 def probability_FPT(graph, Bs, N=3):
     P_B = 0
@@ -259,12 +236,13 @@ def probability_FPT(graph, Bs, N=3):
         P_B +=probability_condition(graph, node, "CARTOON") * probability_priori(graph, "CARTOON")
         P_B +=probability_condition(graph, node, "PORNO") * probability_priori(graph, "PORNO")
     return  P_B
-    for B in Bs:
+    """ for B in Bs:
         for node in graph.nodes():
             if not(node in {"CARTOON", "PORNO"}):
                 P_B +=  probability_condition(graph, node, B) * probability_priori(graph, B)
   
     return P_B
+    """
 def bayes_calc(graph, cause, effects):
     p_FPT = probability_FPT(graph, effects)
     if p_FPT == 0:
@@ -278,7 +256,7 @@ def bayes_calc(graph, cause, effects):
 
 
 #print(probability_condition( g_parsed, "DISNEY", "CARTOON"))
-print("thBayes : "+ str(bayes_calc(g_parsed, "DISNEY", ["ROCCO","HOODIE"])))
+print("thBayes : "+ str(bayes_calc(g_parsed, "CARTOON", ["ROCCO","HOODIE"])))
 s = " "
 '''
 while(not(s == "esci")):
