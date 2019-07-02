@@ -15,6 +15,9 @@ import xml.etree.ElementTree as ET
 
 
 entity = {}
+to_node = []  #nodi univoci di to
+
+
 '''
 def graph_toRdf():
     root = ET.Element("rdf:RDF")
@@ -26,6 +29,8 @@ def graph_toRdf():
     tree = ET.ElementTree(root)
     tree.write("serCustom.xml")
 '''
+
+
 
 #single target 
 def entity_map(p,o,target):
@@ -50,14 +55,25 @@ def filter(s,p,o):
     return s,p,o
 
 
-     
-
-
+#calcola il numero dei film presenti per ogni genere e il numero totale de 
+def frequency_nodes(network):
+    count_node = 0
+    for film in to_node:
+        fre_film = 0 
+        edj = network.in_edges(film)
+        for e in edj:
+            if(network.get_edge_data(e[0],e[1])[0]["attr"] == "titolo"):
+                fre_film += 1
+        node = film + "_freq"    
+        network.add_node(node)
+        network.add_edge(film,node,freq=fre_film)
+        count_node += fre_film
+    return count_node
 
 def parseToGraph(g,_from,to,target=None): 
     dsub = {}
     to_list = {}
-
+    
     network = nx.MultiDiGraph()  
 
     for s,p,o in g: #da pdm lo so 
@@ -66,8 +82,10 @@ def parseToGraph(g,_from,to,target=None):
         if(pr in to): #predicati 
             if(_o not in network.nodes()):
                 network.add_node(_o) # generi univoci nel grafo 
+                to_node.append(_o)
             to_list[s] = _o  #i soggetti con i relativi generi 
-
+    #print(to_node)
+    
     for s,p,o in g:
         s,p,o = filter(s,p,o)
 
@@ -108,14 +126,15 @@ def parseToGraph(g,_from,to,target=None):
     print(network["Pixar"])
     '''
 
-     
+    '''
     for u,v in network.edges():
         try:
             print(u,v)
             print(network.get_edge_data(u,v))
         except:
             print(u,v)
-    print("\n\n\n\n\n\n\n\n")
+    '''
+    print("\n\n")
     #print(network["nm0002071"]) #nm0002071
     #print(network["hoodie"]) 
 
@@ -138,6 +157,7 @@ attore = rdflib.URIRef('http://www.example.org/attore')
 genere = rdflib.URIRef('http://www.example.org/genere')
 direttore = rdflib.URIRef('http://www.example.org/direttore')
 autore = rdflib.URIRef('http://www.example.org/autore')
+titolo = rdflib.URIRef('http://www.example.org/titolo') 
 
 g = ConjunctiveGraph()
 #g.parse("/home/phinkie/Scrivania/turbo-watchdogs/ontologie/film.xml", format="xml")
@@ -153,24 +173,26 @@ g.add((film,FOAF.name,Literal("toy story")))
 g.add((film,attore,Literal("http://www.imdb.com/name/hoodie")))
 g.add((film,attore,Literal("http://www.imdb.com/name/buzz")))
 g.add((film,genere,Literal("http://www.imdb.com/genr/Cartoon")))
-
+g.add((film,titolo,Literal("http://www.imdb.com/title/ToyStory")))
 g.add((film,direttore,Literal("http://www.imdb.com/company/disney")))
 g.add((film,autore,Literal("http://www.imdb.com/name/Pixar")))
+g.add((film,titolo,Literal("http://www.imdb.com/title/ToyStory")))
 
 
 g.add((film1,direttore,Literal("http://www.imdb.com/company/disney")))
 g.add((film1,genere,Literal("http://www.imdb.com/genr/Cartoon")))
 g.add((film1,attore,Literal("http://www.imdb.com/company/hoodie")))
+g.add((film1,titolo,Literal("http://www.imdb.com/title/Toy2")))
 
 
 g.add((film2,direttore,Literal("http://www.imdb.com/company/RoccoAccademy")))
 g.add((film2,genere,Literal("http://www.imdb.com/genr/Porno")))
 g.add((film2,attore,Literal("http://www.imdb.com/name/hoodie")))
+g.add((film2,titolo,Literal("http://www.imdb.com/title/HoodieFuckEveryone")))
 
-G = parseToGraph(g,["attore","direttore","autore"],["genere"])
-
+G = parseToGraph(g,["titolo","attore","direttore","autore"],["genere"])
+frequency_nodes(G)
  
-
 
 '''
 #G = parseToGraph(g,["direttore","attore","autore"],["genere"])
