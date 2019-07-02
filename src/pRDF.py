@@ -11,15 +11,11 @@ from rdflib.namespace import XSD
 
 import re 
 
-
-
 # add predicato-obj transitivo  
 def parseToGraph(g,_from,to): 
     dsub = {}
     to_list = {}
-
-    network = nx.MultiDiGraph()  
-
+    network = nx.MultiDiGraph()
 
     for s,p,o in g: #da pdm lo so 
         s = s.strip().replace("//","/").split('/')
@@ -46,7 +42,7 @@ def parseToGraph(g,_from,to):
         o = re.split('~|#|/',o)
         o = o[len(o)-1]
         
-        print(sub,pre,o)
+        print(sub, pre, o)
 
         if(sub  in dsub.keys()):
             if(pre in dsub[sub].keys()): 
@@ -71,41 +67,30 @@ def parseToGraph(g,_from,to):
             if(o not in network.nodes()):
                 network.add_node(o)
             to_item = to_list[sub]
-            if(network.has_edge(o,to_item)):
-                w = network.get_edge_data(o,to_item)
+            if(network.has_edge(o, to_item)):
+                w = network.get_edge_data(o, to_item)
                 w = w[0]["weight"] 
                 network[o][to_item][0]["weight"] = w + 1
                 #print(network.get_edge_data(o,to_item))
             else:
-                network.add_edge(o,to_item,attr=pre,weight=1)    
-        
-    '''
-    network.add_edge("Pixar","hoodie",weight=21)
-    network.add_edge("Pixar","buzz",weight=94)
-    print(network["Pixar"])
-    '''
-
-     
-    for u,v in network.edges():
-        try:
-            print(u,v)
-            print(network.get_edge_data(u,v))
-        except:
-            print(u,v)
-    print("\n\n\n\n\n\n\n\n")
-    print(network["nm0002071"]) #nm0002071
-    return network
+                network.add_edge(o, to_item, attr=pre, weight=1)
     
+    for u, v in network.edges():
+        try:
+            print(u, v)
+            print(network.get_edge_data(u, v))
+        except:
+            print(u, v)
+    #print("************")
+    #print(network["nm0002071"]) #nm0002071
+    return network
+  
+   
+film1 = rdflib.URIRef('http://www.example.org/tt001')
 
-film = rdflib.URIRef('http://www.example.org/tt001')
+film2 = rdflib.URIRef('http://www.example.org/tt002')
 
-film1 = rdflib.URIRef('http://www.example.org/tt002')
-
-film2 = rdflib.URIRef('http://www.example.org/tt003')
-
-
-pr = rdflib.URIRef('http://www.example.org/~attr_prob')
-id = rdflib.URIRef('http://www.example.org/unique_id')
+film3 = rdflib.URIRef('http://www.example.org/tt003')
 
 attore = rdflib.URIRef('http://www.example.org/attore')
 genere = rdflib.URIRef('http://www.example.org/genere')
@@ -113,36 +98,138 @@ direttore = rdflib.URIRef('http://www.example.org/direttore')
 autore = rdflib.URIRef('http://www.example.org/autore')
 
 g = ConjunctiveGraph()
-g.parse("/home/phinkie/Scrivania/turbo-watchdogs/ontologie/film.xml", format="xml")
+
+'''
+#path = "/home/phinkie/Scrivania/turbo-watchdogs/"
+path =  "../"
+
+g.parse(path+"ontologie/film.xml", format="xml")
 G = parseToGraph(g,["actor","director","author"],["genre"])
 '''
-#info generali 
-g.add((film,FOAF.age,Literal(1997)))
-g.add((film,FOAF.name,Literal("toy story")))
+#info generali TT001
+g.add((film1, FOAF.age, Literal(1997)))
+g.add((film1, FOAF.name, Literal("TOY_STORY")))
 
 #info film
-g.add((film,attore,Literal("hoodie")))
-g.add((film,attore,Literal("buzz")))
-g.add((film,genere,Literal("Cartoon")))
+g.add((film1, attore, Literal("HOODIE")))
+g.add((film1, attore, Literal("BUZZ")))
+g.add((film1, genere, Literal("CARTOON")))
 
-g.add((film,direttore,Literal("disney")))
-g.add((film,autore,Literal("Pixar")))
+g.add((film1, direttore, Literal("DISNEY")))
+g.add((film1, autore, Literal("PIXAR")))
+
+#info generali TT002
+g.add((film2, FOAF.age, Literal(1999)))
+g.add((film2, FOAF.name, Literal("TOY_STORY2")))
+
+g.add((film2, direttore, Literal("DISNEY")))
+g.add((film2, genere, Literal("CARTOON")))
+g.add((film2, attore, Literal("HOODIE")))
+g.add((film2, autore, Literal("ROCCO")))
+
+#info generali TT002
+g.add((film3, FOAF.age, Literal(2010)))
+g.add((film3, FOAF.name, Literal("DILDO_STORY")))
+
+g.add((film3, direttore, Literal("ROCCOACCADEMY")))
+g.add((film3, genere, Literal("PORNO")))
+g.add((film3, attore, Literal("HOODIE")))
+g.add((film3, autore, Literal("ROCCO")))
 
 
-g.add((film1,direttore,Literal("disney")))
-g.add((film1,genere,Literal("Cartoon")))
-g.add((film1,attore,Literal("hoodie")))
+g_parsed = parseToGraph(g, ["direttore","attore","autore"],["genere"])
 
 
-g.add((film2,direttore,Literal("RoccoAccademy")))
-g.add((film2,genere,Literal("Porno")))
-g.add((film2,attore,Literal("hoodie")))
+def numOutDegree(graph, node, to=None):
+    #TODO: utilizzare in_degree di networkx
+    weight = "weight" 
+    n = graph[node]
+    outdegree = 0 
+    if to==None:        
+        for films in n:
+            attrdict = graph.get_edge_data(node, films) 
+            for attrs in attrdict:
+                outdegree += attrdict[attrs][weight] 
+    else:
+        attrdict = graph.get_edge_data(node, to) 
+        if attrdict == None:
+            outdegree = 0
+        else:
+            for attrs in attrdict:
+                outdegree += attrdict[attrs][weight]    
+    return outdegree
+#g_parsed
 
-#g.add((id,FOAF.age,Literal(0.90)))
+def probability_condition(graph, node, to): #P (A  | B)
+    if isinstance(node, list):
+        if len(node)>1:
+            p = numOutDegree(graph, node[0], to) / numOutDegree(graph, node[0]) * \
+             probability_condition(graph,node[1:],to)
+            return p
+        else:
+            if len(node)==1:
+                p = probability_condition(graph, node[0], to) 
+                return p
+            else:
+                return 1
+        return 1
+    else:
+        p = numOutDegree(graph, node, to) / numOutDegree(graph, node)
+        return p
+
+def probability_priori(graph, B, N=3):
+
+    if B == "CARTOON":
+        return 2/3
+    if B == "PORNO":
+        return 1/3
 
 
-g.add((italia,pr,id))
-g.add((id,RDF.value,Literal(9.0)))
+    p = numOutDegree(graph, B) / N
+    print("propriori: "+str(p))
+    return p
+
+
+def probability_FPT(graph, Bs, N=3):
+    P_B = 0
+    for node in Bs:
+        P_B +=probability_condition(graph, node, "CARTOON") * probability_priori(graph, "CARTOON")
+        P_B +=probability_condition(graph, node, "PORNO") * probability_priori(graph, "PORNO")
+    return  P_B
+    for B in Bs:
+        for node in graph.nodes():
+            if not(node in {"CARTOON", "PORNO"}):
+                P_B +=  probability_condition(graph, node, B) * probability_priori(graph, B)
+  
+    return P_B
+def bayes_calc(graph, cause, effects):
+    p_FPT = probability_FPT(graph, effects)
+    if p_FPT == 0:
+        return 0
+    else:
+        return (probability_condition(graph, effects, cause) * probability_priori(graph, cause)) \
+        /p_FPT
+
+
+
+
+
+
+#print(probability_condition( g_parsed, "DISNEY", "CARTOON"))
+print("thBayes : "+ str(bayes_calc(g_parsed, "DISNEY", ["ROCCO","HOODIE"])))
+s = " "
+'''
+while(not(s == "esci")):
+    try:
+        s = input("inserire nodo:")
+        s = s.upper()
+        print("OutDegree : "+ str(numOutDegree(g_parsed, s)))
+        print("Pr : "+ str(probability_condition(g_parsed,[s,"BUZZ"], "CARTOON")))
+        #print(g_parsed[s])
+    except:
+        print("exit",end="")
+        break
+     
 '''
 
 '''
