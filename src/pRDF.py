@@ -12,6 +12,7 @@ from rdflib.namespace import XSD
 import re 
 
 entity = {}
+#utilizzato in prob_FPT
 to_node = []  #nodi univoci di to
 
 '''
@@ -182,36 +183,44 @@ g.add((film3, titolo, Literal("DILDO_STORY")))
 
 g_parsed = parseToGraph(g, ["titolo","direttore","attore","autore"],["genere"])
 tot_freq = frequency_nodes(g_parsed)
-print(g_parsed.nodes()) 
 
 #TODO: utilizzare in_degree di networkx
 def numOutDegree(graph, node, to=None):
-    weight = "weight" 
+    weight = "weight"
     n = graph[node]
-    outdegree = 0 
-    if to==None:        
-        for films in n:
+    outdegree = 0
+    if to == None:
+        out_edges = list(g_parsed.out_edges(node, data=True))
+        for out_edge in out_edges:        
+            outdegree += out_edge[2][weight]
+        """ for films in n:
             attrdict = graph.get_edge_data(node, films) 
             for attrs in attrdict:
                 outdegree += attrdict[attrs][weight] 
-    else:
-        attrdict = graph.get_edge_data(node, to) 
+        """ 
+    else:        
+        out_edges = list(g_parsed.out_edges(node, data=True))        
+        for out_edge in out_edges: 
+            if out_edge[1] == to:
+                outdegree += out_edge[2][weight]
+        """ attrdict = graph.get_edge_data(node, to) 
         if attrdict == None:
             outdegree = 0
         else:
             for attrs in attrdict:
-                outdegree += attrdict[attrs][weight]    
+                outdegree += attrdict[attrs][weight]   
+        """  
     return outdegree
 
-def probability_condition(graph, node, to): #P (A  | B)
+def conditional_probability(graph, node, to): #P (A  | B)
     if isinstance(node, list):
         if len(node)>1:
             p = numOutDegree(graph, node[0], to) / numOutDegree(graph, node[0]) * \
-             probability_condition(graph,node[1:],to)
+             conditional_probability(graph,node[1:],to)
             return p
         else:
             if len(node)==1:
-                p = probability_condition(graph, node[0], to) 
+                p = conditional_probability(graph, node[0], to) 
                 return p
     else:
         p = numOutDegree(graph, node, to) / numOutDegree(graph, node) 
@@ -219,52 +228,44 @@ def probability_condition(graph, node, to): #P (A  | B)
 
 def probability_priori(graph, B, N):
     if N>0:
-        return graph.get_edge_data(B,B+"_freq")[0]["freq"]/N
+        return graph.get_edge_data(B, B+"_freq")[0]["freq"]/N
     else:
         print("N = 0!")
         return -1
 
 def probability_FPT(graph, Bs, N):
     P_B = 0
-    for node in Bs:
-        pr = probability_priori(graph, "CARTOON", N)
-        P_B +=probability_condition(graph, node, "CARTOON") * pr
-
-        pr = probability_priori(graph, "PORNO", N)
-        P_B +=probability_condition(graph, node, "PORNO") * pr
+    for priori in to_node:
+        pr = probability_priori(graph, priori, N)
+        # Calcola la prob condizionata e congiuta dei nodi Bs
+        pc = conditional_probability(graph, Bs, priori)
+        P_B += pc * pr
     return  P_B
-    """ for B in Bs:
-        for node in graph.nodes():
-            if not(node in {"CARTOON", "PORNO"}):
-                P_B +=  probability_condition(graph, node, B) * probability_priori(graph, B)
-  
-    return P_B
-    """
+
 def bayes_calc(graph, cause, effects, tot_freq):
     p_FPT = probability_FPT(graph, effects, tot_freq)
-    if p_FPT == 0:
+    if p_FPT <= 0:
         return 0
     else:
-        return (probability_condition(graph, effects, cause) * probability_priori(graph, cause, tot_freq)) \
-        /p_FPT
+        p_A_B = conditional_probability(graph, effects, cause)
+        pr = probability_priori(graph, cause, tot_freq)
+        return (p_A_B * pr) / p_FPT
 
-
-#print(probability_condition( g_parsed, "DISNEY", "CARTOON"))
-print("thBayes : "+ str(1-bayes_calc(g_parsed, "CARTOON", ["HOODIE","ROCCO","BUZZ"], tot_freq)))
-s = " "
-'''
-while(not(s == "esci")):
+conds = " " 
+while(not(conds == "esci")):
     try:
-        s = input("inserire nodo:")
-        s = s.upper()
-        print("OutDegree : "+ str(numOutDegree(g_parsed, s)))
-        print("Pr : "+ str(probability_condition(g_parsed,[s,"BUZZ"], "CARTOON")))
+        conds = input("inserire uno o piu nodi separta da ',': ")
+        conds = conds.upper().replace(" ","")
+        conds = conds.split(',')
+        gen = input("inserire un genere: ")
+        gen = gen.upper()
+        print("Pr: "+ str(conditional_probability(g_parsed, conds, gen)))        
+        print("thBayes: "+ str(bayes_calc(g_parsed, gen, conds , tot_freq)))
         #print(g_parsed[s])
+        conds=" "
     except:
         print("exit",end="")
         break
-     
-'''
  
 """ 
 #G = parseToGraph(g,["direttore","attore","autore"],["genere"])
