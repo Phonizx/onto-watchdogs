@@ -180,15 +180,12 @@ g.add((film3, attore, Literal("HOODIE")))
 g.add((film3, autore, Literal("ROCCO")))
 g.add((film3, titolo, Literal("DILDO_STORY")))
 
-
 g_parsed = parseToGraph(g, ["titolo","direttore","attore","autore"],["genere"])
+tot_freq = frequency_nodes(g_parsed)
+print(g_parsed.nodes()) 
 
-print("********************************")
-print(frequency_nodes(g_parsed))
-print(g_parsed["CARTOON"]) 
-
+#TODO: utilizzare in_degree di networkx
 def numOutDegree(graph, node, to=None):
-    #TODO: utilizzare in_degree di networkx
     weight = "weight" 
     n = graph[node]
     outdegree = 0 
@@ -205,7 +202,6 @@ def numOutDegree(graph, node, to=None):
             for attrs in attrdict:
                 outdegree += attrdict[attrs][weight]    
     return outdegree
-#g_parsed
 
 def probability_condition(graph, node, to): #P (A  | B)
     if isinstance(node, list):
@@ -217,24 +213,25 @@ def probability_condition(graph, node, to): #P (A  | B)
             if len(node)==1:
                 p = probability_condition(graph, node[0], to) 
                 return p
-            else:
-                return 1
-        return 1
     else:
-        p = numOutDegree(graph, node, to) / numOutDegree(graph, node)
+        p = numOutDegree(graph, node, to) / numOutDegree(graph, node) 
         return p
 
-def probability_priori(graph, B): 
-    if B == "CARTOON":
-        return 2/3
-    if B == "PORNO":
-        return 1/3
+def probability_priori(graph, B, N):
+    if N>0:
+        return graph.get_edge_data(B,B+"_freq")[0]["freq"]/N
+    else:
+        print("N = 0!")
+        return -1
 
-def probability_FPT(graph, Bs, N=3):
+def probability_FPT(graph, Bs, N):
     P_B = 0
     for node in Bs:
-        P_B +=probability_condition(graph, node, "CARTOON") * probability_priori(graph, "CARTOON")
-        P_B +=probability_condition(graph, node, "PORNO") * probability_priori(graph, "PORNO")
+        pr = probability_priori(graph, "CARTOON", N)
+        P_B +=probability_condition(graph, node, "CARTOON") * pr
+
+        pr = probability_priori(graph, "PORNO", N)
+        P_B +=probability_condition(graph, node, "PORNO") * pr
     return  P_B
     """ for B in Bs:
         for node in graph.nodes():
@@ -243,20 +240,17 @@ def probability_FPT(graph, Bs, N=3):
   
     return P_B
     """
-def bayes_calc(graph, cause, effects):
-    p_FPT = probability_FPT(graph, effects)
+def bayes_calc(graph, cause, effects, tot_freq):
+    p_FPT = probability_FPT(graph, effects, tot_freq)
     if p_FPT == 0:
         return 0
     else:
-        return (probability_condition(graph, effects, cause) * probability_priori(graph, cause)) \
+        return (probability_condition(graph, effects, cause) * probability_priori(graph, cause, tot_freq)) \
         /p_FPT
 
 
-
-
-
 #print(probability_condition( g_parsed, "DISNEY", "CARTOON"))
-print("thBayes : "+ str(bayes_calc(g_parsed, "CARTOON", ["ROCCO","HOODIE"])))
+print("thBayes : "+ str(1-bayes_calc(g_parsed, "CARTOON", ["HOODIE","ROCCO","BUZZ"], tot_freq)))
 s = " "
 '''
 while(not(s == "esci")):
@@ -271,17 +265,16 @@ while(not(s == "esci")):
         break
      
 '''
-
-'''
+ 
+""" 
 #G = parseToGraph(g,["direttore","attore","autore"],["genere"])
 edge_labels = []
-pos = nx.spring_layout(G)   
+pos = nx.spring_layout(g_parsed)   
 #edge_labels = nx.get_edge_attributes(G,'pr')
 #print(edge_labels)
-nx.draw_networkx_edge_labels(G, pos, labels=edge_labels,
+nx.draw_networkx_edge_labels(g_parsed, pos, labels=edge_labels,
                                 font_size=10, font_color='k', font_family='sans-serif',
                                 font_weight='normal', alpha=2.0, bbox=None, ax=None, rotate=False)
-nx.draw(G, pos=pos, with_labels=True, node_size=200,font_size=13) 
+nx.draw(g_parsed, pos=pos, with_labels=True, node_size=200,font_size=13) 
 
-plt.show()
-'''
+plt.show()  """
