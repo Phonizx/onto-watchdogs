@@ -13,13 +13,14 @@ import re
 
 class Net:
     
-    def __init__(self):
+    def __init__(self,_from,to):
         self.network = nx.MultiDiGraph() 
         self.dsub = {}
         self.to_list = {}
         self.to_node = [] 
         self.g = self.load_rdf()
-
+        self.parseToGraph(self.g,_from,to)
+        self.frequency_nodes("titolo") #identificativo entity 
 
     def load_rdf(self):        
         film1 = rdflib.URIRef('http://www.example.org/tt001')

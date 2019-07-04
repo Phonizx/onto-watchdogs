@@ -2,9 +2,9 @@ import  Net as nt
 
 class BayesNet:
 
-    def __init__(self):
+    def __init__(self,_from,to):
         #get networkx from Net.py 
-        self.n = nt.Net()
+        self.n = nt.Net(_from,to)
         self.graph = self.n.get_network()
         self.to_node = self.n.get_ToNode()
         

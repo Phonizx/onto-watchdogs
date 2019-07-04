@@ -17,7 +17,7 @@ import BayesNet as bn
 
 conds = " " 
 
-bayes = bn.BayesNet()
+bayes = bn.BayesNet(["direttore","attore","autore"],["genere"])
 
 
 while(not(conds == "esci")):
