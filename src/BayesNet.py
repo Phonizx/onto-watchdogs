@@ -10,9 +10,13 @@ class BayesNet:
         self.graph = self.n.get_network()
         self.to_node = self.n.get_ToNode()
 
+    def normalize_zero(self, prob):
+        return ZERO_PROB if prob == 0 else prob
+
     def probability_priori(self, B, N):
         if N>0:
-            return self.graph.get_edge_data(B, B+"_freq")[0]["freq"]/N
+            pr = self.graph.get_edge_data(B, B+"_freq")[0]["freq"]/N
+            return self.normalize_zero(pr)
         else:
             print("N = 0!")
             return ZERO_PROB
@@ -31,23 +35,23 @@ class BayesNet:
         if isinstance(node, list):
             if len(node)>1:
                 try:
-                    p_A_B = self.graph.get_edge_data(node, to)[0]["probability"]/N
+                    p_A_B = self.graph.get_edge_data(node[0], to)[0]["probability"]
                 except:
                     p_A_B = self.n.numOutDegree(node[0], to) / self.n.numOutDegree(node[0])
+                    p_A_B = self.normalize_zero(p_A_B)
                     self.add_prob_edge(node[0], to, p_A_B)
-                p = p_A_B * self.conditional_probability(node[1:],to)
-                return p
+                p = p_A_B * self.conditional_probability(node[1:], to)
             else:
                 if len(node)==1:
-                    p = self.conditional_probability(node[0], to) 
-                    return p
-        else:
+                    p = self.conditional_probability(node[0], to)
+        else: 
             try:
-                p = self.graph.get_edge_data(node, to)[0]["probability"]/N
+                p = self.graph.get_edge_data(node, to)[0]["probability"]
             except:
                 p = self.n.numOutDegree(node, to) / self.n.numOutDegree(node)
+                p = self.normalize_zero(p)
                 self.add_prob_edge(node, to, p)
-            return p
+        return p
 
     def probability_FPT(self, Bs, N):
         P_B = ZERO_PROB
@@ -67,7 +71,5 @@ class BayesNet:
         else:
             p_A_B = self.conditional_probability(effects, cause)
             pr = self.probability_priori(cause, tot_freq)
-            bayesP=(p_A_B * pr) / p_FPT
-            if (bayesP == 0):
-                bayesP = ZERO_PROB
-            return bayesP
+            bayesP = (p_A_B * pr) / p_FPT
+            return bayesP if bayesP > 0 else ZERO_PROB

@@ -17,8 +17,8 @@ class Net:
         self.to_list = {}
         self.to_node = []
         self.g = self.load_rdf()
-        self.parseToGraph(self.g, _from,to)
-        self.totfreq = self.frequency_nodes("titolo") #identificativo entity 
+        self.parseToGraph(self.g, _from, to)
+        self.totfreq = self.frequency_nodes(_from[0]) #identificativo entity 
 
     def load_rdf(self):
         return self.load_example_toy_story()
@@ -65,6 +65,14 @@ class Net:
 
         return g
 
+    def load_example_metastatic_cancer(self):
+        MetaCancer = rdflib.URIRef('http://www.example.org/MetastaticCancer')
+        SerumCalcium = rdflib.URIRef('http://www.example.org/SerumCalcium')
+        BrainTumor = rdflib.URIRef('http://www.example.org/BrainTumor')
+        
+
+
+
     def get_ToNode(self):
         return self.to_node
     
@@ -91,9 +99,9 @@ class Net:
                     self.to_node.append(_o)
                 self.to_list[s] = _o
     
-    def parseToGraph(self,g,_from,to,target=None): 
+    def parseToGraph(self, g, _from, to, target=None):
         g = self.g
-        self.parse_subject(g,to) #parsing dei singoli nodi To
+        self.parse_subject(g, to) #parsing dei singoli nodi To
         for s,p,o in g:
             s,p,o = self.filter(s, p, o)
             if(s in self.dsub.keys()):
@@ -127,7 +135,7 @@ class Net:
                     self.network.add_edge(o, to_item, attr=p, weight=1)
         return self.network
 
-    def frequency_nodes(self,name_label):
+    def frequency_nodes(self, name_label):
        # titolo ="label" #"titolo"
         count_node = 0
         for entity in self.to_node:
