@@ -17,23 +17,20 @@ import BayesNet as bn
 
 conds = " " 
 
-bayes = bn.BayesNet(["direttore","attore","autore"],["genere"])
-
+bayes = bn.BayesNet(["titolo","direttore","attore","autore"],["genere"])
 
 while(not(conds == "esci")):
-    try:
-        conds = input("inserire uno o piu nodi separta da ',': ")
-        conds = conds.replace(" ","").upper()
-        conds = conds.split(',')
-        gen = input("inserire un genere: ")
-        gen = gen.upper()
-        print("Pr: "+ str(bayes.conditional_probability(conds, gen)))        
-        print("thBayes: "+ str(bayes.bayes_calc(gen, conds , tot_freq)))
-        #print(g_parsed[s])
-        conds=" "
-    except:
-        print("exit",end="")
-        break
+    # try:
+    conds = input("inserire uno o piu nodi separta da ',': ")
+    conds = conds.replace(" ","").upper()
+    conds = conds.split(',')
+    gen = input("inserire un genere: ")
+    gen = gen.upper()
+    print("Pr: "+ str(bayes.conditional_probability(conds, gen)))   
+    print("thBayes: "+ str(bayes.bayes_calc(gen, conds)))
+    #print(g_parsed[s])
+    conds=" "
+    # except:
+    #     print("exit",end="")
+    #     break
  
-
-

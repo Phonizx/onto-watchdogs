@@ -9,8 +9,6 @@ from rdflib.collection import Collection
 from rdflib import ConjunctiveGraph, URIRef, RDFS
 import re 
 
-
-
 class Net:
     
     def __init__(self,_from,to):
@@ -20,7 +18,7 @@ class Net:
         self.to_node = [] 
         self.g = self.load_rdf()
         self.parseToGraph(self.g,_from,to)
-        self.frequency_nodes("titolo") #identificativo entity 
+        self.totfreq = self.frequency_nodes("titolo") #identificativo entity 
 
     def load_rdf(self):        
         film1 = rdflib.URIRef('http://www.example.org/tt001')
@@ -66,7 +64,7 @@ class Net:
         g.add((film3, FOAF.name, Literal("DILDO_STORY")))
 
         g.add((film3, direttore, Literal("ROCCOACCADEMY")))
-        g.add((film3, genere, Literal("PORNO")))
+        g.add((film3, genere, Literal("HORROR")))
         g.add((film3, attore, Literal("HOODIE")))
         g.add((film3, autore, Literal("ROCCO")))
         g.add((film3, titolo, Literal("DILDO_STORY")))
@@ -75,11 +73,9 @@ class Net:
     def get_ToNode(self):
         return self.to_node
     
-
     def get_network(self):
         return self.network
 
-    
     def filter(self,s,p,o):
         s = s.strip().replace("//","/").split('/')
         s = s[len(s)-1]
@@ -91,7 +87,6 @@ class Net:
         o = o[len(o)-1]
         return s,p,o
     
-    
     def parse_subject(self,g,to):
         for s,p,o in g: #da pdm lo so         
             s,pr,_o = self.filter(s,p,o)
@@ -100,8 +95,7 @@ class Net:
                 if(_o not in self.network.nodes()):
                     self.network.add_node(_o) # generi univoci nel grafo 
                     self.to_node.append(_o)
-                self.to_list[s] = _o  
-
+                self.to_list[s] = _o
     
     def parseToGraph(self,g,_from,to,target=None): 
         g = self.g
@@ -144,7 +138,6 @@ class Net:
         #print(self.network["HOODIE"])
         return self.network
 
-
     def frequency_nodes(self,name_label):
        # titolo ="label" #"titolo"
         count_node = 0
@@ -159,8 +152,6 @@ class Net:
             self.network.add_edge(film,node,freq=fre_film)
             count_node += fre_film
         return count_node
-
-
 
     def numOutDegree(self,node, to=None):
         weight = "weight"

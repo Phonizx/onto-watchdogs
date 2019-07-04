@@ -7,7 +7,6 @@ class BayesNet:
         self.n = nt.Net(_from,to)
         self.graph = self.n.get_network()
         self.to_node = self.n.get_ToNode()
-        
     
     def probability_priori(self, B, N):
         if N>0:
@@ -29,7 +28,6 @@ class BayesNet:
             p = self.n.numOutDegree(node, to) / self.n.numOutDegree(node) 
             return p
 
-
     def probability_FPT(self,Bs, N):
         P_B = 0
         for priori in self.to_node:
@@ -39,9 +37,8 @@ class BayesNet:
             P_B += pc * pr
         return  P_B
 
-
-
-    def bayes_calc(self,cause, effects, tot_freq):
+    def bayes_calc(self,cause, effects):
+        tot_freq = self.n.totfreq
         p_FPT = self.probability_FPT(effects, tot_freq)
         if p_FPT <= 0:
             return 0
