@@ -51,12 +51,14 @@ def filter(s,p,o):
 
 #calcola il numero dei film presenti per ogni genere e il numero totale de 
 def frequency_nodes(network):
+    print("COUNTING NODES GENRE")
+    titolo ="label" #"titolo"
     count_node = 0
     for film in to_node:
         fre_film = 0 
         edj = network.in_edges(film)
         for e in edj:
-            if(network.get_edge_data(e[0],e[1])[0]["attr"] == "titolo"):
+            if(network.get_edge_data(e[0],e[1])[0]["attr"] == titolo):
                 fre_film += 1
         node = film + "_freq"    
         network.add_node(node)
@@ -65,12 +67,14 @@ def frequency_nodes(network):
     return count_node
 
 def parseToGraph(g,_from,to,target=None): 
+    print("PARSING TO GRAPH")
     dsub = {}
     to_list = {}
     
     network = nx.MultiDiGraph()  
 
-    for s,p,o in g: #da pdm lo so 
+    for s,p,o in g: #da pdm lo so         
+        print("s: "+str(s)+" p: "+str(p)+" o: "+str(o))
         s,pr,_o = filter(s,p,o)
         #entity_map(pr,o,"imdb")
         if(pr in to): #predicati 
@@ -100,7 +104,7 @@ def parseToGraph(g,_from,to,target=None):
         else:
             dsub[s] = {}
             dsub[s][p] = o
-        
+        print("CREATING GRAPH")
         #graph 
         if(p in _from):
             if(o not in network.nodes()):
@@ -138,13 +142,12 @@ autore = rdflib.URIRef('http://www.example.org/autore')
 titolo = rdflib.URIRef('http://www.example.org/titolo') 
 
 g = ConjunctiveGraph()
-'''
 #path = "/home/phinkie/Scrivania/turbo-watchdogs/"
 path =  "../"
 
 g.parse(path+"ontologie/film.xml", format="xml")
-G = parseToGraph(g,["actor","director","author"],["genre"])
-'''
+g_parsed = parseToGraph(g,["actor","label","director","author"],["genre"])
+"""
 #info generali TT001
 g.add((film1, FOAF.age, Literal(1997)))
 g.add((film1, FOAF.name, Literal("TOY_STORY")))
@@ -165,11 +168,6 @@ g.add((film2, genere, Literal("CARTOON")))
 g.add((film2, attore, Literal("HOODIE")))
 g.add((film2, autore, Literal("ROCCO")))
 g.add((film2, titolo, Literal("TOY_STORY2")))
-""" 
-g.add((film2,direttore,Literal("http://www.imdb.com/company/RoccoAccademy")))
-g.add((film2,genere,Literal("http://www.imdb.com/genr/Porno")))
-g.add((film2,attore,Literal("http://www.imdb.com/name/hoodie")))
-g.add((film2,titolo,Literal("http://www.imdb.com/title/HoodieFuckEveryone"))) """
 
 #info generali TT002
 g.add((film3, FOAF.age, Literal(2010)))
@@ -182,15 +180,20 @@ g.add((film3, autore, Literal("ROCCO")))
 g.add((film3, titolo, Literal("DILDO_STORY")))
 
 g_parsed = parseToGraph(g, ["titolo","direttore","attore","autore"],["genere"])
+"""
 tot_freq = frequency_nodes(g_parsed)
-
+'''
+with open("NODE.txt","w") as f:
+    f.write(str(g_parsed.nodes()))
+f.close()
+'''
 #TODO: utilizzare in_degree di networkx
 def numOutDegree(graph, node, to=None):
     weight = "weight"
     n = graph[node]
     outdegree = 0
     if to == None:
-        out_edges = list(g_parsed.out_edges(node, data=True))
+        out_edges = list(graph.out_edges(node, data=True))
         for out_edge in out_edges:        
             outdegree += out_edge[2][weight]
         """ for films in n:
@@ -199,7 +202,7 @@ def numOutDegree(graph, node, to=None):
                 outdegree += attrdict[attrs][weight] 
         """ 
     else:        
-        out_edges = list(g_parsed.out_edges(node, data=True))        
+        out_edges = list(graph.out_edges(node, data=True))        
         for out_edge in out_edges: 
             if out_edge[1] == to:
                 outdegree += out_edge[2][weight]
@@ -255,10 +258,10 @@ conds = " "
 while(not(conds == "esci")):
     try:
         conds = input("inserire uno o piu nodi separta da ',': ")
-        conds = conds.upper().replace(" ","")
+        conds = conds.replace(" ","")
         conds = conds.split(',')
         gen = input("inserire un genere: ")
-        gen = gen.upper()
+        #gen = gen.upper()
         print("Pr: "+ str(conditional_probability(g_parsed, conds, gen)))        
         print("thBayes: "+ str(bayes_calc(g_parsed, gen, conds , tot_freq)))
         #print(g_parsed[s])
