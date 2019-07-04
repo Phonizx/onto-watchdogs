@@ -17,8 +17,9 @@ import BayesNet as bn
 
 conds = " " 
 
-bayes = bn.BayesNet(["titolo","direttore","attore","autore"],["genere"])
+bayes = bn.BayesNet(["titolo","direttore","attore","autore"],["genere" ])
 
+print("thBayes: "+ str(bayes.bayes_calc("CARTOON", ["HOODIE","ROCCO"])))
 while(not(conds == "esci")):
     # try:
     conds = input("inserire uno o piu nodi separta da ',': ")
