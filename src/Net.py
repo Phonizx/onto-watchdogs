@@ -11,17 +11,17 @@ import re
 
 class Net:
     
-    def __init__(self, _from, to):
+    def __init__(self, _from, to, es=0):
         self.network = nx.MultiDiGraph()
         self.dsub = {}
         self.to_list = {}
         self.to_node = []
-        self.g = self.load_rdf()
+        self.g = self.load_rdf(es)
         self.parseToGraph(self.g, _from, to)
         self.totfreq = self.frequency_nodes(_from[0]) #identificativo entity 
 
-    def load_rdf(self):
-        return self.load_example_toy_story()
+    def load_rdf(self,es=0):
+        return self.load_example_toy_story() if es==0 else self.load_example_metastatic_cancer()
 
     def load_example_toy_story(self):
         film1 = rdflib.URIRef('http://www.example.org/tt001')
@@ -57,7 +57,7 @@ class Net:
         #info generali TT003
         g.add((film3, FOAF.age, Literal(2010)))
         #g.add((film3, FOAF.name, Literal("HORROR_STORY")))
-        g.add((film3, direttore, Literal("ROCCOACCADEMY")))
+        g.add((film3, direttore, Literal("HORRORACCADEMY")))
         g.add((film3, genere, Literal("HORROR")))
         g.add((film3, attore, Literal("HOODIE")))
         g.add((film3, autore, Literal("ROCCO")))
@@ -66,16 +66,31 @@ class Net:
         return g
 
     def load_example_metastatic_cancer(self):
-        MetaCancer = rdflib.URIRef('http://www.example.org/MetastaticCancer')
-        SerumCalcium = rdflib.URIRef('http://www.example.org/SerumCalcium')
-        BrainTumor = rdflib.URIRef('http://www.example.org/BrainTumor')
-        
 
+        MC = rdflib.URIRef('http://www.example.org/MetastaticCancer')
+        #NMC = rdflib.URIRef('http://www.example.org/NotMetastaticCancer')
+        SC = rdflib.URIRef('http://www.example.org/SerumCalcium')
+        #NS = rdflib.URIRef('http://www.example.org/NotSerumCalcium')
+        BT = rdflib.URIRef('http://www.example.org/BrainTumor')
+        #NBT = rdflib.URIRef('http://www.example.org/NotBrainTumor')
+
+        g = ConjunctiveGraph()
+        paziente = rdflib.URIRef('http://www.example.org/paziente')
+        # genere
+        g.add((paziente, MC, Literal("TRUEMC")))
+        g.add((paziente, MC, Literal("FALSEMC")))
+
+        g.add((paziente, SC, Literal("TRUESC")))
+        g.add((paziente, SC, Literal("FALSESC")))
+        g.add((paziente, BT, Literal("TRUEBT")))
+        g.add((paziente, BT, Literal("FALSEBT")))
+        
+        return g
 
 
     def get_ToNode(self):
         return self.to_node
-    
+
     def get_network(self):
         return self.network
 
@@ -165,7 +180,7 @@ class Net:
 
     def draw_network(self):
         pos = nx.spring_layout(self.network)
-        nx.draw_networkx_edge_labels(self.network, pos, labels=edge_labels,
+        nx.draw_networkx_edge_labels(self.network, pos,
                                         font_size=10, font_color='k', font_family='sans-serif',
                                         font_weight='normal', alpha=2.0, bbox=None, ax=None, rotate=False)
         nx.draw(self.network, pos=pos, with_labels=True, node_size=200,font_size=13) 

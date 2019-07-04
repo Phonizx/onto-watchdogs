@@ -4,18 +4,39 @@ ZERO_PROB = sys.float_info.min
 
 class BayesNet:
 
-    def __init__(self,_from,to):
+    def __init__(self, _from, to, es=0):
         #get networkx from Net.py
-        self.n = nt.Net(_from,to)
+        self.n = nt.Net(_from, to, es)
         self.graph = self.n.get_network()
         self.to_node = self.n.get_ToNode()
+
+        if to == "MetastaticCancer":
+            self.test_metacancer()
+
+    def test_metacancer(self):
+        self.add_prob_edge("TRUESC", "TRUEMC", 0.8)
+        self.add_prob_edge("TRUESC", "FALSEMC", 0.2)
+        self.add_prob_edge("FALSESC", "TRUEMC", 0.2)
+        self.add_prob_edge("FALSESC", "FALSEMC", 0.8)
+        
+        self.add_prob_edge("TRUEBT", "TRUEMC", 0.2)
+        self.add_prob_edge("TRUEBT", "FALSEMC", 0.05)
+        self.add_prob_edge("FALSEBT", "TRUEMC", 0.8)
+        self.add_prob_edge("FALSEBT", "FALSEMC", 0.95)
+
+        self.add_prob_edge("TRUEMC", "TRUEMC_freq", 0.8)
+        self.add_prob_edge("FALSEMC", "FALSEMC_freq", 0.2)
 
     def normalize_zero(self, prob):
         return ZERO_PROB if prob == 0 else prob
 
     def probability_priori(self, B, N):
         if N>0:
-            pr = self.graph.get_edge_data(B, B+"_freq")[0]["freq"]/N
+            try:
+                pr = self.graph.get_edge_data(B, B+"_freq")[0]["probability"]
+            except:
+                pr = self.graph.get_edge_data(B, B+"_freq")[0]["freq"]/N
+                self.add_prob_edge(B, B+"_freq", pr)
             return self.normalize_zero(pr)
         else:
             print("N = 0!")
@@ -26,12 +47,14 @@ class BayesNet:
         if (self.graph.has_edge(node, to)):
             edge = self.graph.get_edge_data(node, to)[0]
             self.graph.remove_edge(node, to)
-            self.graph.add_edge(node, to, attr=edge["attr"], weight=edge["weight"], probability=prob)
+            try:
+                self.graph.add_edge(node, to, attr=edge["attr"], weight=edge["weight"], probability=prob)
+            except:
+                self.graph.add_edge(node, to, probability=prob)
         else:
-            self.graph.add_edge(node, to, attr="ruolo", weight=0, probability=ZERO_PROB) 
+            self.graph.add_edge(node, to, attr="ruolo", weight=0, probability=prob)
 
-
-    def conditional_probability(self, node, to): #P (A  | B)
+    def conditional_probability(self, node, to): #P (A | B)
         if isinstance(node, list):
             if len(node)>1:
                 try:
@@ -63,7 +86,7 @@ class BayesNet:
         return  P_B
 
     def bayes_calc(self, cause, effects):
-        tot_freq = self.n.totfreq
+        tot_freq = self.n.totfreq+10
         p_FPT = self.probability_FPT(effects, tot_freq)
         if p_FPT <= 0:
             print("p_FPT = 0!")
