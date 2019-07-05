@@ -34,6 +34,7 @@ class Net:
 
     def get_network(self):
         return self.network
+    
 
     def filter(self, s, p, o):
         s = s.strip().replace("//", "/").split('/')
