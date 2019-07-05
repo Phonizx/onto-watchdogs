@@ -20,7 +20,7 @@ if esempio == "0":
     print("thBayes: "+ str(bayes.bayes_calc("CARTOON", ["HOODIE","ROCCO"])))
 else:
     bayes = bn.BayesNet(["paziente","BrainTumor","SerumCalcium"],["MetastaticCancer"])
-    print("thBayes: "+ str(bayes.bayes_calc("TRUEMC", ["TRUESC","FALSEBT"])))
+    print("thBayes: "+ str(bayes.bayes_calc("TRUEMC", ["TRUESC"])))
 
 conds = " "
 while(not(conds == "esci")):

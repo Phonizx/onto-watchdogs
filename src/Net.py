@@ -9,84 +9,25 @@ from rdflib.collection import Collection
 from rdflib import ConjunctiveGraph, URIRef, RDFS
 import re 
 
+
+     
 class Net:
     
-    def __init__(self, _from, to, es=0):
+    def __init__(self, path_rdf,_from,to):
         self.network = nx.MultiDiGraph()
         self.dsub = {}
         self.to_list = {}
         self.to_node = []
-        self.g = self.load_rdf(es)
+        self.g = self.load_rdf(path_rdf)
         self.parseToGraph(self.g, _from, to)
-        self.totfreq = self.frequency_nodes(_from[0]) #identificativo entity 
-
-    def load_rdf(self,es=0):
-        return self.load_example_toy_story() if es==0 else self.load_example_metastatic_cancer()
-
-    def load_example_toy_story(self):
-        film1 = rdflib.URIRef('http://www.example.org/tt001')
-        film2 = rdflib.URIRef('http://www.example.org/tt002')
-        film3 = rdflib.URIRef('http://www.example.org/tt003')
-
-        attore = rdflib.URIRef('http://www.example.org/attore')
-        genere = rdflib.URIRef('http://www.example.org/genere')
-        direttore = rdflib.URIRef('http://www.example.org/direttore')
-        autore = rdflib.URIRef('http://www.example.org/autore')
-        titolo = rdflib.URIRef('http://www.example.org/titolo') 
-
-        g = ConjunctiveGraph()
-        #info generali TT001
-        g.add((film1, FOAF.age, Literal(1997)))
-        #g.add((film1, FOAF.name, Literal("TOY_STORY")))
-        g.add((film1, attore, Literal("HOODIE")))
-        g.add((film1, attore, Literal("BUZZ")))
-        g.add((film1, genere, Literal("CARTOON")))
-        g.add((film1, direttore, Literal("DISNEY")))
-        g.add((film1, autore, Literal("PIXAR")))
-        g.add((film1, titolo, Literal("TOY_STORY")))
-
-        #info generali TT002
-        g.add((film2, FOAF.age, Literal(1999)))
-        #g.add((film2, FOAF.name, Literal("TOY_STORY2")))
-        g.add((film2, direttore, Literal("DISNEY")))
-        g.add((film2, genere, Literal("CARTOON")))
-        g.add((film2, attore, Literal("HOODIE")))
-        g.add((film2, autore, Literal("ROCCO")))
-        g.add((film2, titolo, Literal("TOY_STORY2")))
-
-        #info generali TT003
-        g.add((film3, FOAF.age, Literal(2010)))
-        #g.add((film3, FOAF.name, Literal("HORROR_STORY")))
-        g.add((film3, direttore, Literal("HORRORACCADEMY")))
-        g.add((film3, genere, Literal("HORROR")))
-        g.add((film3, attore, Literal("HOODIE")))
-        g.add((film3, autore, Literal("ROCCO")))
-        g.add((film3, titolo, Literal("HORROR_STORY")))
-
-        return g
-
-    def load_example_metastatic_cancer(self):
-
-        MC = rdflib.URIRef('http://www.example.org/MetastaticCancer')
-        #NMC = rdflib.URIRef('http://www.example.org/NotMetastaticCancer')
-        SC = rdflib.URIRef('http://www.example.org/SerumCalcium')
-        #NS = rdflib.URIRef('http://www.example.org/NotSerumCalcium')
-        BT = rdflib.URIRef('http://www.example.org/BrainTumor')
-        #NBT = rdflib.URIRef('http://www.example.org/NotBrainTumor')
-
-        g = ConjunctiveGraph()
-        paziente = rdflib.URIRef('http://www.example.org/paziente')
-        # genere
-        g.add((paziente, MC, Literal("TRUEMC")))
-        g.add((paziente, MC, Literal("FALSEMC")))
-
-        g.add((paziente, SC, Literal("TRUESC")))
-        g.add((paziente, SC, Literal("FALSESC")))
-        g.add((paziente, BT, Literal("TRUEBT")))
-        g.add((paziente, BT, Literal("FALSEBT")))
-        
-        return g
-
+        self.totfreq = self.frequency_nodes(_from[0])
+    
+    def load_rdf(self,path): #carica rdf da path        
+        g = Graph()
+        try:
+            return g.parse(path)
+        except:
+            print("Exception: Invalid rdf path")
 
     def get_ToNode(self):
         return self.to_node

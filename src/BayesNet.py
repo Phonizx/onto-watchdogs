@@ -10,7 +10,7 @@ class BayesNet:
         self.graph = self.n.get_network()
         self.to_node = self.n.get_ToNode()
 
-        if to == "MetastaticCancer":
+        if to[0] == "MetastaticCancer":
             self.test_metacancer()
 
     def test_metacancer(self):
@@ -24,8 +24,8 @@ class BayesNet:
         self.add_prob_edge("FALSEBT", "TRUEMC", 0.8)
         self.add_prob_edge("FALSEBT", "FALSEMC", 0.95)
 
-        self.add_prob_edge("TRUEMC", "TRUEMC_freq", 0.8)
-        self.add_prob_edge("FALSEMC", "FALSEMC_freq", 0.2)
+        self.add_prob_edge("TRUEMC", "TRUEMC_freq", 0.2)
+        self.add_prob_edge("FALSEMC", "FALSEMC_freq", 0.8)
 
     def normalize_zero(self, prob):
         return ZERO_PROB if prob == 0 else prob
