@@ -46,7 +46,6 @@ class Handle:
 
     def dumpGraph(self):   
         self.net.dump_net(self.path_workspace + "/graph.pickle") 
-        #nx.write_gpickle(self.net.get_network(), self.path_workspace +"/graph.gpickle")
 
     def loadGraph(self,path_workspace):
         try:
@@ -63,7 +62,7 @@ class Handle:
         self.path_workspace = self.ws + workspace
         net = self.loadGraph(self.path_workspace)
         bayes = bn.BayesNet(net)
-        
+
         if(os.path.isdir(self.path_workspace)):
             print("Pr: "+ str(bayes.conditional_probability(effects, cause)))   
             print("thBayes: "+ str(bayes.bayes_calc(cause, effects)))
