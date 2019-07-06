@@ -54,6 +54,7 @@ class Handle:
             self.net = nt.Net()
             self.net.load_net(path_workspace + "/graph.pickle")
             self.network = self.net.get_network()
+            #print(self.network["HOODIE"])
             return self.network
         except:
             print("Exception: loading graph error")
