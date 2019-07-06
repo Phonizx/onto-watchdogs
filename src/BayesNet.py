@@ -4,11 +4,9 @@ ZERO_PROB = sys.float_info.min
 
 class BayesNet:
 
-    def __init__(self, _from, to, es=0):
-        #get networkx from Net.py
-        self.n = nt.Net(_from, to, es)
-        self.graph = self.n.get_network()
-        self.to_node = self.n.get_ToNode()
+    def __init__(self, net):
+        self.graph = net.get_network()
+        self.to_node = net.get_ToNode()
 
     def normalize_zero(self, prob):
         return ZERO_PROB if prob == 0 else prob

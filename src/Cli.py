@@ -43,10 +43,11 @@ def workspace(): #mostra tutti i workspace creati
     oshandle.show_workspace()
  
 @main.command()
+@click.argument("ws")
 @click.option('--effects')
 @click.option('--cause')
-def bayes(effects,cause):
+def bayes(ws,effects,cause):
     effects = effects.split(',')
-    oshandle.
+     
 if __name__ == "__main__":
     main()

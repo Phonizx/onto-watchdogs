@@ -8,12 +8,14 @@ import matplotlib.pyplot as plt
 from rdflib.collection import Collection
 from rdflib import ConjunctiveGraph, URIRef, RDFS
 import re 
-
-
+import _pickle as cPickle
      
 class Net:
     
-    def __init__(self, path_rdf,_from,to):
+    def __init__(self):
+        pass
+    
+    def load_graph(self,path_rdf,_from,to):
         self.network = nx.MultiDiGraph()
         self.dsub = {}
         self.to_list = {}
@@ -21,7 +23,15 @@ class Net:
         self.g = self.load_rdf(path_rdf)
         self.parseToGraph(self.g, _from, to)
         self.totfreq = self.frequency_nodes(_from[0])
+
     
+    def load_net(self,path_dump):
+        f = open(path_dump, 'rb')
+        tmp_dict = cPickle.load(f)
+        f.close()          
+        self.__dict__.update(tmp_dict) 
+    
+
     def load_rdf(self,path): #carica rdf da path        
         g = Graph()
         try:
@@ -127,3 +137,10 @@ class Net:
                                         font_weight='normal', alpha=2.0, bbox=None, ax=None, rotate=False)
         nx.draw(self.network, pos=pos, with_labels=True, node_size=200,font_size=13) 
         plt.show()  
+
+    def dump_net(self,path_dump):
+        f = open(path_dump, 'wb')
+        cPickle.dump(self.__dict__, f, 2)
+        f.close()
+
+   
