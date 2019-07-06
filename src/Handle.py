@@ -18,9 +18,14 @@ class Handle:
         for file in glob.glob("*.xml"):
             print("\t- " + file.title())
     
-    def load_ontologia(self,demo,_from,to): #warning, load ontologia NON DEMO
+    def load_ontologia(self,demo,_from,to,init=False): #warning, load ontologia NON DEMO
         self.net = nt.Net()
         self.net.load_graph("../ontologie/" + demo,_from,to)
+
+        if(init):
+            bayes = bn.BayesNet(self.net)
+            bayes.inizialize_probability()
+        
         ws_name = demo.split('/')
         ws_name = ws_name[len(ws_name)-1]
         self.path_workspace = self.ws + ws_name 
@@ -62,7 +67,7 @@ class Handle:
         self.path_workspace = self.ws + workspace
         net = self.loadGraph(self.path_workspace)
         bayes = bn.BayesNet(net)
-        bayes.inizialize_probability()
+        #bayes.inizialize_probability()
         if(os.path.isdir(self.path_workspace)):
             print("P(" + str(cause) + "|" + str(effects) + "): " + str(bayes.bayes_calc(cause, effects)))
         if(show):

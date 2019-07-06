@@ -2,6 +2,7 @@ import click
 import os,glob
 import Handle as Hl 
 
+#/usr/bin/python3 pRDF.py load toystory.xml --about ["titolo","direttore","attore","autore"] --to ["genere"]
 
 cmdHandler = Hl.Handle()
 
@@ -34,10 +35,11 @@ def parseList(arg):
 @click.argument("path")
 @click.option('--about')
 @click.option('--to')
-def load(path,about,to): #parsa un'ontologia in un grafo di tipo networkx 
+@click.option('--prob', '-p', is_flag=True, help="Print more output.")
+def load(path,about,to,prob): #parsa un'ontologia in un grafo di tipo networkx 
     about = parseList(about)
     to = parseList(to)
-    cmdHandler.load_ontologia(path,about,to)
+    cmdHandler.load_ontologia(path,about,to,prob)
 
 
 @main.command()
