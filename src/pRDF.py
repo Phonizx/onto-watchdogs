@@ -1,40 +1,59 @@
-import rdflib 
-from rdflib import Graph, Literal, BNode, Namespace, RDF, URIRef
-from rdflib.namespace import DC, FOAF
-
-from rdflib.extras.external_graph_libs import rdflib_to_networkx_multidigraph
-import networkx as nx
-import matplotlib.pyplot as plt
-from rdflib.collection import Collection
-from rdflib import ConjunctiveGraph, URIRef, RDFS
-from rdflib.namespace import XSD
-
-import re 
-import Net as nt
-import BayesNet as bn
+import click 
+import os,glob
+import Handle as Hl 
 
 
-esempio = input("0 = toy storie example, 1 = metastaticcancer example: ")
-if esempio == "0":
-    bayes = bn.BayesNet(["titolo","direttore","attore","autore"],["genere"])
-    print("thBayes: "+ str(bayes.bayes_calc("CARTOON", ["HOODIE","ROCCO"])))
-else:
-    bayes = bn.BayesNet(["paziente","BrainTumor","SerumCalcium"],["MetastaticCancer"])
-    print("thBayes: "+ str(bayes.bayes_calc("TRUEMC", ["TRUESC"])))
 
-conds = " "
-while(not(conds == "esci")):
-    # try:
-    conds = input("inserire uno o piu nodi separta da ',': ")
-    conds = conds.replace(" ","").upper()
-    conds = conds.split(',')
-    gen = input("inserire un genere: ")
-    gen = gen.upper()
-    print("Pr: "+ str(bayes.conditional_probability(conds, gen)))   
-    print("thBayes: "+ str(bayes.bayes_calc(gen, conds)))
-    #print(g_parsed[s])
-    conds=" "
-    # except:
-    #     print("exit",end="")
-    #     break
+
+
+cmdHandler = Hl.Handle()
+
+@click.group()
+def main():
+    
+    pass
+
+@main.command() #mostra tutte le ontologie
+def show():
+    cmdHandler.show_ontologies()
+
+@main.command()
+@click.option("--eg")
+def demo(eg):
+    cmdHandler.demos(eg)
+
+def parseList(arg):
+    arg = arg.replace("[","").replace("]","")
+    args = arg.split(',')
+    return args
+
+
+@main.command(context_settings=dict(help_option_names=['-h', '--help']))
+@click.argument("path")
+@click.option('--about')
+@click.option('--to')
+def load(path,about,to): #parsa un'ontologia in un grafo di tipo networkx 
+    about = parseList(about)
+    to = parseList(to)
+    cmdHandler.load_ontologia(path,about,to)
+
+
+@main.command()
+@click.argument("ws")
+def use(ws): #utilizzo di un workspace esistente 
+    cmdHandler.loadWorkspace(ws)
+
+@main.command()
+def workspace(): #mostra tutti i workspace creati 
+    cmdHandler.show_workspace()
  
+@main.command()
+@click.argument("ws")
+@click.option('--effects')
+@click.option('--cause')
+def bayes(ws,effects,cause):
+    effects = effects.split(',')
+    cmdHandler.bayesanOp(ws,effects,cause)
+     
+if __name__ == "__main__":
+    main()

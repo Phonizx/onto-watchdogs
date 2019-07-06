@@ -18,7 +18,7 @@ class Handle:
         for file in glob.glob("*.xml"):
             print("\t- " + file.title())
     
-    def load_demo(self,demo,_from,to): #warning, load ontologia NON DEMO
+    def load_ontologia(self,demo,_from,to): #warning, load ontologia NON DEMO
         self.net = nt.Net()
         self.net.load_graph("../ontologie/" + demo,_from,to)
         ws_name = demo.split('/')
@@ -53,7 +53,6 @@ class Handle:
             self.net = nt.Net()
             self.net.load_net(path_workspace + "/graph.pickle")
             self.network = self.net.get_network()
-            #print(self.network["HOODIE"])
             return self.net
         except:
             print("Exception: loading graph error")
@@ -64,6 +63,17 @@ class Handle:
         self.path_workspace = self.ws + workspace
         net = self.loadGraph(self.path_workspace)
         bayes = bn.BayesNet(net)
+        
         if(os.path.isdir(self.path_workspace)):
             print("Pr: "+ str(bayes.conditional_probability(effects, cause)))   
             print("thBayes: "+ str(bayes.bayes_calc(cause, effects)))
+        
+
+    def demos(self,example):
+        if(example in "toystory"):
+            self.load_ontologia("toystory.xml",["titolo","direttore","attore","autore"],["genere"])
+            self.bayesanOp("toystory.xml", ["HOODIE","ROCCO"],"CARTOON")
+        else:
+            if(example in "tumone"):
+                self.load_ontologia("tumone.xml",["paziente","BrainTumor","SerumCalcium"],["MetastaticCancer"])
+                self.bayesanOp("tumone.xml", ["TRUESC"],"TRUEMC")
