@@ -25,11 +25,11 @@ class Handle:
         if(init):
             bayes = bn.BayesNet(self.net)
             bayes.inizialize_probability()
-        
         ws_name = demo.split('/')
         ws_name = ws_name[len(ws_name)-1]
         self.path_workspace = self.ws + ws_name 
-
+        self.path_workspace = '.' + self.path_workspace.split('.')[1]
+        
         if(os.path.isdir(self.path_workspace)):
             print(" Workspace Existed ")
         else:
@@ -75,12 +75,12 @@ class Handle:
 
     def demos(self,example):
         if(example in "toystory"):
-            self.load_ontologia("toystory.xml",["titolo","direttore","attore","autore"],["genere"])
-            self.bayesanOp("toystory.xml", ["HOODIE","ROCCO"],"CARTOON",True)
+            self.load_ontologia("toystory.xml",["titolo","direttore","attore","autore"],["genere"],True)
+            self.bayesanOp("toystory", ["HOODIE","ROCCO"],"CARTOON",True)
         else:
             if(example in "tumone"):
-                self.load_ontologia("tumone.xml",["paziente","BrainTumor","SerumCalcium"],["MetastaticCancer"])
-                self.bayesanOp("tumone.xml", ["TRUESC","FALSEBT"],"TRUEMC",True)
+                self.load_ontologia("tumone.xml",["paziente","BrainTumor","SerumCalcium"],["MetastaticCancer"],True)
+                self.bayesanOp("tumone", ["TRUESC","FALSEBT"],"TRUEMC",True)
 
     def draw_graph(self,workspace):
         self.path_workspace = self.ws + workspace
