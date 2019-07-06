@@ -11,7 +11,6 @@ class Handle:
             os.mkdir(self.ws)
         self.path = "../ontologie/"
         
-       
     def show_ontologies(self):
         os.chdir(self.path)
         print("Ontologie trovate: ")
@@ -55,7 +54,7 @@ class Handle:
             self.net.load_net(path_workspace + "/graph.pickle")
             self.network = self.net.get_network()
             #print(self.network["HOODIE"])
-            return self.network
+            return self.net
         except:
             print("Exception: loading graph error")
             return None
@@ -63,6 +62,8 @@ class Handle:
 
     def bayesanOp(self,workspace,effects,cause):
         self.path_workspace = self.ws + workspace
+        net = self.loadGraph(self.path_workspace)
+        bayes = bn.BayesNet(net)
         if(os.path.isdir(self.path_workspace)):
-            print("ktm")
-            #self.bn = BN.BayesNet()
+            print("Pr: "+ str(bayes.conditional_probability(effects, cause)))   
+            print("thBayes: "+ str(bayes.bayes_calc(cause, effects)))

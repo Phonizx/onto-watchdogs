@@ -5,6 +5,7 @@ ZERO_PROB = sys.float_info.min
 class BayesNet:
 
     def __init__(self, net):
+        self.n = net
         self.graph = net.get_network()
         self.to_node = net.get_ToNode()
 

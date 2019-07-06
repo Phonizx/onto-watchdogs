@@ -48,6 +48,7 @@ def workspace(): #mostra tutti i workspace creati
 @click.option('--cause')
 def bayes(ws,effects,cause):
     effects = effects.split(',')
+    oshandle.bayesanOp(ws,effects,cause)
      
 if __name__ == "__main__":
     main()
