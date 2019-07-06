@@ -135,15 +135,9 @@ class Net:
                                         font_size=10, font_color='k', font_family='sans-serif',
                                         font_weight='normal', alpha=2.0, bbox=None, ax=None, rotate=False)
         nx.draw(self.network, pos=pos, with_labels=True, node_size=200,font_size=13) 
-        plt.show()  
+        plt.show()
 
-    # def add_probability(self):
-    #     pass
-    
     def dump_net(self,path_dump):
         f = open(path_dump, 'wb')
         cPickle.dump(self.__dict__, f, 2)
         f.close()
-
-    
-   

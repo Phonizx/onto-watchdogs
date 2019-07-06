@@ -64,8 +64,7 @@ class Handle:
         bayes = bn.BayesNet(net)
         bayes.inizialize_probability()
         if(os.path.isdir(self.path_workspace)):
-            print("Pr: "+ str(bayes.conditional_probability(effects, cause)))
-            print("thBayes: "+ str(bayes.bayes_calc(cause, effects)))
+            print("P(" + str(cause) + "|" + str(effects) + "): " + str(bayes.bayes_calc(cause, effects)))
         if(show):
             net.draw_network()
 
