@@ -3,9 +3,6 @@ import os,glob
 import Handle as Hl 
 
 
-
-
-
 cmdHandler = Hl.Handle()
 
 @click.group()
@@ -24,7 +21,8 @@ def draw(ws):
 @main.command()
 @click.option("--eg")
 def demo(eg):
-    cmdHandler.demos(eg)
+    if(eg is not None):
+        cmdHandler.demos(eg)
 
 def parseList(arg):
     arg = arg.replace("[","").replace("]","")

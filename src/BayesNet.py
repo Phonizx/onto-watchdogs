@@ -68,7 +68,7 @@ class BayesNet:
         return  P_B
 
     def bayes_calc(self, cause, effects):
-        tot_freq = self.n.totfreq+10
+        tot_freq = self.n.totfreq
         p_FPT = self.probability_FPT(effects, tot_freq)
         if p_FPT <= 0:
             print("p_FPT = 0!")

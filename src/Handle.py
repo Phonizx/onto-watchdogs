@@ -76,7 +76,7 @@ class Handle:
         else:
             if(example in "tumone"):
                 self.load_ontologia("tumone.xml",["paziente","BrainTumor","SerumCalcium"],["MetastaticCancer"])
-                self.bayesanOp("tumone.xml", ["TRUESC"],"TRUEMC",True)
+                self.bayesanOp("tumone.xml", ["TRUESC","FALSEBT"],"TRUEMC",True)
 
     def draw_graph(self,workspace):
         self.path_workspace = self.ws + workspace

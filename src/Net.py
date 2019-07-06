@@ -137,9 +137,13 @@ class Net:
         nx.draw(self.network, pos=pos, with_labels=True, node_size=200,font_size=13) 
         plt.show()  
 
+    def add_probability(self):
+        pass
+    
     def dump_net(self,path_dump):
         f = open(path_dump, 'wb')
         cPickle.dump(self.__dict__, f, 2)
         f.close()
 
+    
    
