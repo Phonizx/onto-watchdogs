@@ -10,12 +10,16 @@ cmdHandler = Hl.Handle()
 
 @click.group()
 def main():
-    
     pass
 
 @main.command() #mostra tutte le ontologie
 def show():
     cmdHandler.show_ontologies()
+
+@main.command()
+@click.option("--ws")
+def draw(ws):
+    cmdHandler.draw_graph(ws)
 
 @main.command()
 @click.option("--eg")
