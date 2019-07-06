@@ -20,6 +20,12 @@ def draw(ws):
     cmdHandler.draw_graph(ws)
 
 @main.command()
+@click.option("--ws")
+def parse(ws):
+    cmdHandler.parseToRdf(ws)
+
+
+@main.command()
 @click.option("--eg")
 def demo(eg):
     if(eg is not None):
@@ -58,6 +64,7 @@ def workspace(): #mostra tutti i workspace creati
 def bayes(ws,effects,cause):
     effects = effects.split(',')
     cmdHandler.bayesanOp(ws,effects,cause)
-     
+
+
 if __name__ == "__main__":
     main()

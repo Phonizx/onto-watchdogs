@@ -44,6 +44,8 @@ class Net:
     def get_network(self):
         return self.network
     
+    def get_Rdf(self):
+        return self.g
 
     def filter(self, s, p, o):
         s = s.strip().replace("//", "/").split('/')
