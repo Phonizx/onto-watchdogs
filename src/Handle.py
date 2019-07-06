@@ -62,9 +62,9 @@ class Handle:
         self.path_workspace = self.ws + workspace
         net = self.loadGraph(self.path_workspace)
         bayes = bn.BayesNet(net)
-
+        bayes.inizialize_probability()
         if(os.path.isdir(self.path_workspace)):
-            print("Pr: "+ str(bayes.conditional_probability(effects, cause)))   
+            print("Pr: "+ str(bayes.conditional_probability(effects, cause)))
             print("thBayes: "+ str(bayes.bayes_calc(cause, effects)))
         if(show):
             net.draw_network()

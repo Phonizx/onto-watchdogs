@@ -9,6 +9,23 @@ class BayesNet:
         self.graph = net.get_network()
         self.to_node = net.get_ToNode()
 
+    def inizialize_probability(self):
+        causes = self.to_node.copy()
+        for to in self.to_node:
+            causes.append(to+"_freq")
+        nodi = list(self.graph.nodes())
+        for cas in causes:
+            try:
+                for n in nodi:
+                    if n==cas:
+                        nodi.remove(cas)
+            except:
+                print(end="")
+        for cause in self.to_node:
+            self.bayes_calc(cause, nodi)
+
+
+
     def normalize_zero(self, prob):
         return ZERO_PROB if prob == 0 else prob
 
