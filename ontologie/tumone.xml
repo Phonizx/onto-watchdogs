@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:ns1="http://www.example.org/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://www.example.org/paziente">
+    <ns1:paziente>nome_paziente</ns1:paziente>
+    <ns1:MetastaticCancer>FALSEMC</ns1:MetastaticCancer>
+    <ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+    <ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+    <ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+    <ns1:BrainTumor>TRUEBT</ns1:BrainTumor>
+    <ns1:SerumCalcium>FALSESC</ns1:SerumCalcium>
+  </rdf:Description>
+</rdf:RDF>
