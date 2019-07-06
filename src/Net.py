@@ -1,7 +1,6 @@
 import rdflib 
 from rdflib import Graph, Literal, BNode, Namespace, RDF, URIRef
 from rdflib.namespace import DC, FOAF
-
 from rdflib.extras.external_graph_libs import rdflib_to_networkx_multidigraph
 import networkx as nx
 import matplotlib.pyplot as plt

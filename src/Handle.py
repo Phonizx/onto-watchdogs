@@ -26,7 +26,7 @@ class Handle:
         self.path_workspace = self.ws + ws_name 
 
         if(os.path.isdir(self.path_workspace)):
-            print("Workspace Existed")
+            print(" Workspace Existed ")
         else:
             os.mkdir(self.path_workspace)
             self.dumpGraph()
@@ -80,5 +80,8 @@ class Handle:
 
     def draw_graph(self,workspace):
         self.path_workspace = self.ws + workspace
-        net = self.loadGraph(self.path_workspace)
-        net.draw_network()
+        try:
+            net = self.loadGraph(self.path_workspace)
+            net.draw_network()
+        except:
+            print("Exception:   ")
