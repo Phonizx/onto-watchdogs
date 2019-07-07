@@ -182,6 +182,6 @@ class Net:
                     result_set.append({v : k})
             print(result_set)  
         except:
-            print("Exception: Query error")   
+            print("Exception: Syntax error")   
      
     

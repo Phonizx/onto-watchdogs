@@ -14,19 +14,26 @@ cmdHandler = Hl.Handle()
 
 
 @click.group()
+@click.option("--ws",help="specifica il workspace caricato")
+@click.option("--path",help="Percorso file di un ontologia da caricare o da serializzare")
+@click.option("--eg",help="Nome dell'esempio da mostrare {toystory | tumone}")
+@click.option('--about',help="Lista nodi from")
+@click.option('--to',help="Lista nodi to")
+@click.option('--prob', '-p', is_flag=True, help="calcola le probabilita' di tutte le entita' presenti nel grafo")
+#@click.command("bayes",help="Apre Shell interattiva in cui e' possibile fare inferenza nella rete bayesana")
 def main():
     pass
 
-@main.command() #mostra tutte le ontologie
+@main.command(help="Mostra le ontologie presenti nella cartella di lavoro") #mostra tutte le ontologie
 def show():
     cmdHandler.show_ontologies()
 
-@main.command()
+@main.command(help="Visualizza la rete bayesana")
 @click.option("--ws")
 def draw(ws):
     cmdHandler.draw_graph(ws)
 
-@main.command()
+@main.command(help="Apre una shell interattiva per query SPARQL")
 @click.option("--ws")
 def query(ws):
         suggest = ['SELECT', 'WHERE', 'FILTER', '?'] 
@@ -40,21 +47,26 @@ def query(ws):
                 SPARQLCompleter.words.append(v)
         for v in fr:
                 SPARQLCompleter.words.append("/" + v.lower())
-        query = prompt('SPARQL>', 
-                history=FileHistory('history.txt'),
-                auto_suggest=AutoSuggestFromHistory(),
-                completer=SPARQLCompleter,
-                )
-        cmdHandler.quering(ws,query)
+        shell = True
+        while(shell):
+                query = prompt('SPARQL>', 
+                        history=FileHistory('history/SQLhistory.txt'),
+                        auto_suggest=AutoSuggestFromHistory(),
+                        completer=SPARQLCompleter,
+                        )
+                if("exit" not in query):
+                        cmdHandler.quering(ws,query)
+                else:
+                        shell = False
 
-@main.command()
+@main.command(help="Serializza un grafo in un'ontologia in formato xml")
 @click.option("--ws")
 @click.option("--path")
 def parse(ws,path):
     cmdHandler.parseToRdf(ws,path)
 
 
-@main.command()
+@main.command(help="Visualizza una demo specificata con l'opzione --eg")
 @click.option("--eg")
 def demo(eg):
     if(eg is not None):
@@ -66,7 +78,7 @@ def parseList(arg):
     return args
 
 
-@main.command(context_settings=dict(help_option_names=['-h', '--help']))
+@main.command(context_settings=dict(help_option_names=['-h', '--help']),help="Crea da un ontologia una rete bayesana")
 @click.argument("path")
 @click.option('--about')
 @click.option('--to')
@@ -76,7 +88,7 @@ def load(path,about,to,prob): #parsa un'ontologia in un grafo di tipo networkx
     to = parseList(to)
     cmdHandler.load_ontologia(path,about,to,prob)
 
-@main.command()
+@main.command(help="Mostra tutti i workspace caricati")
 def workspace(): #mostra tutti i workspace creati 
     cmdHandler.show_workspace()
 
@@ -94,7 +106,7 @@ def parserBayes(testo):
         return None,None
 
    
-@main.command()
+@main.command(help="Apre Shell interattiva per l'inferenza nella rete bayesana")
 @click.option("--ws")
 def bayes(ws):
         EntityCompleters = WordCompleter([""],
@@ -107,17 +119,19 @@ def bayes(ws):
                 EntityCompleters.words.append(v.lower())
         for v in to:
                 EntityCompleters.words.append(v.lower())
-
-        bayes = prompt('Bayes>', 
-                history=FileHistory('history.txt'),
-                auto_suggest=AutoSuggestFromHistory(),
-                completer=EntityCompleters
-                )
-        effects,cause = parserBayes(bayes)
-        if(effects is not None and cause is not None):
-                cmdHandler.bayesanOp(ws,effects,cause)
-        else:
-                print("Exception query")
+        shell = True
+        while(shell):
+                bayes = prompt('Bayes>', 
+                        history=FileHistory('history/Bhistory.txt'),
+                        auto_suggest=AutoSuggestFromHistory(),
+                        completer=EntityCompleters
+                        )
+                effects,cause = parserBayes(bayes)
+                if(effects is not None and cause is not None or  "exit" not in bayes):
+                        cmdHandler.bayesanOp(ws,effects,cause)
+                else:
+                        shell = False
+                        #print("Exception query")
         
 if __name__ == "__main__":
     main()
