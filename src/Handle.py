@@ -72,6 +72,8 @@ class Handle:
             print("P(" + str(cause) + "|" + str(effects) + "): " + str(bayes.bayes_calc(cause, effects)))
         if(show):
             net.draw_network()
+        #print(net.get_network()["HOODIE"])
+        
 
     def demos(self,example):
         if(example in "toystory"):
@@ -90,9 +92,7 @@ class Handle:
         except:
             print("Exception:   ")
 
-    def parseToRdf(self,workspace):
+    def parseToRdf(self,workspace,path):
         self.path_workspace = self.ws + workspace
-        rdf = self.loadGraph(self.path_workspace).get_Rdf()
-
-        for s,p,o in rdf:
-            print(s,p,o)
+        net  = self.loadGraph(self.path_workspace)
+        net.decoding(path)

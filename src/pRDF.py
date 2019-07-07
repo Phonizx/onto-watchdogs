@@ -21,8 +21,9 @@ def draw(ws):
 
 @main.command()
 @click.option("--ws")
-def parse(ws):
-    cmdHandler.parseToRdf(ws)
+@click.option("--path")
+def parse(ws,path):
+    cmdHandler.parseToRdf(ws,path)
 
 
 @main.command()
@@ -47,12 +48,6 @@ def load(path,about,to,prob): #parsa un'ontologia in un grafo di tipo networkx
     to = parseList(to)
     cmdHandler.load_ontologia(path,about,to,prob)
 
-'''
-@main.command()
-@click.argument("ws")
-def use(ws): #utilizzo di un workspace esistente 
-    cmdHandler.loadWorkspace(ws)
-'''
 @main.command()
 def workspace(): #mostra tutti i workspace creati 
     cmdHandler.show_workspace()

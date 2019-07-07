@@ -17,12 +17,14 @@ class Net:
     def load_graph(self,path_rdf,_from,to):
         self.network = nx.MultiDiGraph()
         self.dsub = {}
+        self.entity = {} 
         self.to_list = {}
         self.to_node = []
+        self.from_node = set()
         self.g = self.load_rdf(path_rdf)
         self.parseToGraph(self.g, _from, to)
         self.totfreq = self.frequency_nodes(_from[0])
-
+        
     
     def load_net(self,path_dump):
         f = open(path_dump, 'rb')
@@ -47,6 +49,9 @@ class Net:
     def get_Rdf(self):
         return self.g
 
+    def get_FromNode(self):
+        return self.from_node
+
     def filter(self, s, p, o):
         s = s.strip().replace("//", "/").split('/')
         s = s[len(s)-1]
@@ -58,7 +63,7 @@ class Net:
         o = o[len(o)-1]
         return s,p,o
     
-    def parse_subject(self, g, to):
+    def parse_entity(self, g, _from,to):
         for s,p,o in g:
             s,pr,_o = self.filter(s,p,o)
             if(pr in to): #predicati 
@@ -66,10 +71,13 @@ class Net:
                     self.network.add_node(_o) # generi univoci nel grafo
                     self.to_node.append(_o)
                 self.to_list[s] = _o
-    
+            if(pr in _from and pr not in _from[0]):
+               self.entity[pr] = p
+               self.from_node.add(_o)
+
     def parseToGraph(self, g, _from, to, target=None):
         g = self.g
-        self.parse_subject(g, to) #parsing dei singoli nodi To
+        self.parse_entity(g, _from,to) #parsing dei singoli nodi To
         for s,p,o in g:
             s,p,o = self.filter(s, p, o)
             if(s in self.dsub.keys()):
@@ -143,3 +151,14 @@ class Net:
         f = open(path_dump, 'wb')
         cPickle.dump(self.__dict__, f, 2)
         f.close()
+
+    def decoding(self,path="polarize.xml"):
+        for fnode in self.from_node:
+            for e in self.network.edges(fnode):
+                pr = self.network.get_edge_data(e[0],e[1])[0]["probability"]
+                role = self.network.get_edge_data(e[0],e[1])[0]["attr"]
+                s = URIRef(self.entity.get(role,"http:www.example.com/ruolo") + "/" + str(e[0]).lower())
+                p = URIRef("http://www.example.com/genere/" + str(e[1]).lower())
+                o = URIRef((Literal(pr)))
+                self.g.add((s,p,o))
+        self.g.serialize(path,format="xml")
