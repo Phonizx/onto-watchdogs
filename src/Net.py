@@ -164,15 +164,18 @@ class Net:
         self.g.serialize(path,format="xml")
         self.dump_net(ws + "/graph.pickle") #aggiornamento di net con kb probabilistica 
     
-    def query(self,query=""):
-       # for s,p,o in self.g:
-       #    print(s,p,o)
-        q = "SELECT ?c ?o WHERE {<http://www.example.org/attore/hoodie> ?c ?o}"
-        result = self.g.query(q)
-        print(list(result))
-        
-        '''
-        for s,p,o in self.g:
-            print(s,p,o)
-        '''
-       
+    def query(self,query="SELECT ?genere ?prob  WHERE {<http://www.example.org/attore/hoodie> ?genere ?prob}"):
+        result_set = [] 
+        rows = self.g.query(query)
+
+        result_set = [] 
+        for binding in rows.bindings:
+            for k, v in binding.items():
+                k = str(k)
+                v = str(v)
+                v = v.split('/')
+                v = v[len(v)-1]
+                result_set.append({v : k})
+        print(result_set)     
+     
+    
