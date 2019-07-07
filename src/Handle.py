@@ -52,7 +52,7 @@ class Handle:
     def dumpGraph(self):   
         self.net.dump_net(self.path_workspace + "/graph.pickle") 
 
-    def loadGraph(self,path_workspace):
+    def loadGraph(self,path_workspace): #load il dumping di net
         try:
             self.net = nt.Net()
             self.net.load_net(path_workspace + "/graph.pickle")
@@ -62,7 +62,7 @@ class Handle:
             print("Exception: loading graph error")
             return None
         
-
+    
     def bayesanOp(self,workspace,effects,cause,show=False):
         self.path_workspace = self.ws + workspace
         net = self.loadGraph(self.path_workspace)
@@ -95,7 +95,7 @@ class Handle:
         net  = self.loadGraph(self.path_workspace)
         net.decoding(self.path_workspace,path)
 
-    def quering(self,workspace):
+    def quering(self,workspace,query):
         self.path_workspace = self.ws + workspace
         net  = self.loadGraph(self.path_workspace) 
-        net.query()
+        net.query(query)

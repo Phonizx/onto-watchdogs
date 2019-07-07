@@ -32,13 +32,16 @@ class Net:
         f.close()          
         self.__dict__.update(tmp_dict) 
     
-
+    
     def load_rdf(self,path): #carica rdf da path        
         g = Graph()
         try:
             return g.parse(path)
         except:
             print("Exception: Invalid rdf path")
+
+    def get_entity(self):
+        return self.entity
 
     def get_ToNode(self):
         return self.to_node
@@ -166,16 +169,19 @@ class Net:
     
     def query(self,query="SELECT ?genere ?prob  WHERE {<http://www.example.org/attore/hoodie> ?genere ?prob}"):
         result_set = [] 
-        rows = self.g.query(query)
+        try:
+            rows = self.g.query(query)
 
-        result_set = [] 
-        for binding in rows.bindings:
-            for k, v in binding.items():
-                k = str(k)
-                v = str(v)
-                v = v.split('/')
-                v = v[len(v)-1]
-                result_set.append({v : k})
-        print(result_set)     
+            result_set = [] 
+            for binding in rows.bindings:
+                for k, v in binding.items():
+                    k = str(k)
+                    v = str(v)
+                    v = v.split('/')
+                    v = v[len(v)-1]
+                    result_set.append({v : k})
+            print(result_set)  
+        except:
+            print("Exception: Query error")   
      
     

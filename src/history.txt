@@ -1,0 +1,21 @@
+
+# 2019-07-07 17:19:37.500806
++cartoon|hoodie,rocco
+
+# 2019-07-07 17:19:51.233650
++cartoon|hoodie,buzz
+
+# 2019-07-07 17:20:59.003974
++ask cartoon|hoodie,buzz
+
+# 2019-07-07 17:21:54.182731
++cartoon|hoodie,buzz
+
+# 2019-07-07 17:22:05.631456
++ask cartoon|hoodie,buzz
+
+# 2019-07-07 17:22:25.568087
++ask horror|hoodie,buzz
+
+# 2019-07-07 17:26:13.293856
++cartoon|hoodie,buzz
