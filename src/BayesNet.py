@@ -38,7 +38,7 @@ class BayesNet:
                 self.add_prob_edge(B, B+"_freq", pr)
             return self.normalize_zero(pr)
         else:
-            print("N = 0!")
+            #print("N = 0!")
             return ZERO_PROB
 
     #add a weight "probability", if there aren't edges, we assume prob equals to ZERO_PROB
