@@ -4,28 +4,27 @@ ZERO_PROB = sys.float_info.min
 
 class BayesNet:
 
-    def __init__(self, _from, to, es=0):
-        #get networkx from Net.py
-        self.n = nt.Net(_from, to, es)
-        self.graph = self.n.get_network()
-        self.to_node = self.n.get_ToNode()
+    def __init__(self, net):
+        self.n = net
+        self.graph = net.get_network()
+        self.to_node = net.get_ToNode()
 
-        if to == "MetastaticCancer":
-            self.test_metacancer()
+    def inizialize_probability(self):
+        causes = self.to_node.copy()
+        for to in self.to_node:
+            causes.append(to+"_freq")
+        nodi = list(self.graph.nodes())
+        for cas in causes:
+            try:
+                for n in nodi:
+                    if n==cas:
+                        nodi.remove(cas)
+            except:
+                print(end="")
+        for cause in self.to_node:
+            self.bayes_calc(cause, nodi)
 
-    def test_metacancer(self):
-        self.add_prob_edge("TRUESC", "TRUEMC", 0.8)
-        self.add_prob_edge("TRUESC", "FALSEMC", 0.2)
-        self.add_prob_edge("FALSESC", "TRUEMC", 0.2)
-        self.add_prob_edge("FALSESC", "FALSEMC", 0.8)
-        
-        self.add_prob_edge("TRUEBT", "TRUEMC", 0.2)
-        self.add_prob_edge("TRUEBT", "FALSEMC", 0.05)
-        self.add_prob_edge("FALSEBT", "TRUEMC", 0.8)
-        self.add_prob_edge("FALSEBT", "FALSEMC", 0.95)
 
-        self.add_prob_edge("TRUEMC", "TRUEMC_freq", 0.8)
-        self.add_prob_edge("FALSEMC", "FALSEMC_freq", 0.2)
 
     def normalize_zero(self, prob):
         return ZERO_PROB if prob == 0 else prob
@@ -86,7 +85,7 @@ class BayesNet:
         return  P_B
 
     def bayes_calc(self, cause, effects):
-        tot_freq = self.n.totfreq+10
+        tot_freq = self.n.totfreq
         p_FPT = self.probability_FPT(effects, tot_freq)
         if p_FPT <= 0:
             print("p_FPT = 0!")

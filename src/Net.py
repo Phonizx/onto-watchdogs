@@ -1,98 +1,59 @@
 import rdflib 
 from rdflib import Graph, Literal, BNode, Namespace, RDF, URIRef
 from rdflib.namespace import DC, FOAF
-
 from rdflib.extras.external_graph_libs import rdflib_to_networkx_multidigraph
 import networkx as nx
 import matplotlib.pyplot as plt
 from rdflib.collection import Collection
 from rdflib import ConjunctiveGraph, URIRef, RDFS
 import re 
-
+import _pickle as cPickle
+     
 class Net:
     
-    def __init__(self, _from, to, es=0):
+    def __init__(self):
+        pass
+    
+    def load_graph(self,path_rdf,_from,to):
         self.network = nx.MultiDiGraph()
         self.dsub = {}
+        self.entity = {} 
         self.to_list = {}
         self.to_node = []
-        self.g = self.load_rdf(es)
+        self.from_node = set()
+        self.g = self.load_rdf(path_rdf)
         self.parseToGraph(self.g, _from, to)
-        self.totfreq = self.frequency_nodes(_from[0]) #identificativo entity 
-
-    def load_rdf(self,es=0):
-        return self.load_example_toy_story() if es==0 else self.load_example_metastatic_cancer()
-
-    def load_example_toy_story(self):
-        film1 = rdflib.URIRef('http://www.example.org/tt001')
-        film2 = rdflib.URIRef('http://www.example.org/tt002')
-        film3 = rdflib.URIRef('http://www.example.org/tt003')
-
-        attore = rdflib.URIRef('http://www.example.org/attore')
-        genere = rdflib.URIRef('http://www.example.org/genere')
-        direttore = rdflib.URIRef('http://www.example.org/direttore')
-        autore = rdflib.URIRef('http://www.example.org/autore')
-        titolo = rdflib.URIRef('http://www.example.org/titolo') 
-
-        g = ConjunctiveGraph()
-        #info generali TT001
-        g.add((film1, FOAF.age, Literal(1997)))
-        #g.add((film1, FOAF.name, Literal("TOY_STORY")))
-        g.add((film1, attore, Literal("HOODIE")))
-        g.add((film1, attore, Literal("BUZZ")))
-        g.add((film1, genere, Literal("CARTOON")))
-        g.add((film1, direttore, Literal("DISNEY")))
-        g.add((film1, autore, Literal("PIXAR")))
-        g.add((film1, titolo, Literal("TOY_STORY")))
-
-        #info generali TT002
-        g.add((film2, FOAF.age, Literal(1999)))
-        #g.add((film2, FOAF.name, Literal("TOY_STORY2")))
-        g.add((film2, direttore, Literal("DISNEY")))
-        g.add((film2, genere, Literal("CARTOON")))
-        g.add((film2, attore, Literal("HOODIE")))
-        g.add((film2, autore, Literal("ROCCO")))
-        g.add((film2, titolo, Literal("TOY_STORY2")))
-
-        #info generali TT003
-        g.add((film3, FOAF.age, Literal(2010)))
-        #g.add((film3, FOAF.name, Literal("HORROR_STORY")))
-        g.add((film3, direttore, Literal("HORRORACCADEMY")))
-        g.add((film3, genere, Literal("HORROR")))
-        g.add((film3, attore, Literal("HOODIE")))
-        g.add((film3, autore, Literal("ROCCO")))
-        g.add((film3, titolo, Literal("HORROR_STORY")))
-
-        return g
-
-    def load_example_metastatic_cancer(self):
-
-        MC = rdflib.URIRef('http://www.example.org/MetastaticCancer')
-        #NMC = rdflib.URIRef('http://www.example.org/NotMetastaticCancer')
-        SC = rdflib.URIRef('http://www.example.org/SerumCalcium')
-        #NS = rdflib.URIRef('http://www.example.org/NotSerumCalcium')
-        BT = rdflib.URIRef('http://www.example.org/BrainTumor')
-        #NBT = rdflib.URIRef('http://www.example.org/NotBrainTumor')
-
-        g = ConjunctiveGraph()
-        paziente = rdflib.URIRef('http://www.example.org/paziente')
-        # genere
-        g.add((paziente, MC, Literal("TRUEMC")))
-        g.add((paziente, MC, Literal("FALSEMC")))
-
-        g.add((paziente, SC, Literal("TRUESC")))
-        g.add((paziente, SC, Literal("FALSESC")))
-        g.add((paziente, BT, Literal("TRUEBT")))
-        g.add((paziente, BT, Literal("FALSEBT")))
+        self.totfreq = self.frequency_nodes(_from[0])
         
-        return g
+    
+    def load_net(self,path_dump):
+        f = open(path_dump, 'rb')
+        tmp_dict = cPickle.load(f)
+        f.close()          
+        self.__dict__.update(tmp_dict) 
+    
+    
+    def load_rdf(self,path): #carica rdf da path        
+        g = Graph()
+        try:
+            return g.parse(path)
+        except:
+            print("Exception: Invalid rdf path")
 
+    def get_entity(self):
+        return self.entity
 
     def get_ToNode(self):
         return self.to_node
 
     def get_network(self):
         return self.network
+    
+    def get_Rdf(self):
+        return self.g
+
+    def get_FromNode(self):
+        return self.from_node
 
     def filter(self, s, p, o):
         s = s.strip().replace("//", "/").split('/')
@@ -105,7 +66,7 @@ class Net:
         o = o[len(o)-1]
         return s,p,o
     
-    def parse_subject(self, g, to):
+    def parse_entity(self, g, _from,to):
         for s,p,o in g:
             s,pr,_o = self.filter(s,p,o)
             if(pr in to): #predicati 
@@ -113,10 +74,13 @@ class Net:
                     self.network.add_node(_o) # generi univoci nel grafo
                     self.to_node.append(_o)
                 self.to_list[s] = _o
-    
+            if(pr in _from and pr not in _from[0]):
+               self.entity[pr] = p
+               self.from_node.add(_o)
+
     def parseToGraph(self, g, _from, to, target=None):
         g = self.g
-        self.parse_subject(g, to) #parsing dei singoli nodi To
+        self.parse_entity(g, _from,to) #parsing dei singoli nodi To
         for s,p,o in g:
             s,p,o = self.filter(s, p, o)
             if(s in self.dsub.keys()):
@@ -184,4 +148,40 @@ class Net:
                                         font_size=10, font_color='k', font_family='sans-serif',
                                         font_weight='normal', alpha=2.0, bbox=None, ax=None, rotate=False)
         nx.draw(self.network, pos=pos, with_labels=True, node_size=200,font_size=13) 
-        plt.show()  
+        plt.show()
+
+    def dump_net(self,path_dump):
+        f = open(path_dump, 'wb')
+        cPickle.dump(self.__dict__, f, 2)
+        f.close()
+
+    def decoding(self,ws,path="polarize.xml"):
+        for fnode in self.from_node:
+            for e in self.network.edges(fnode):
+                pr = self.network.get_edge_data(e[0],e[1])[0]["probability"]
+                role = self.network.get_edge_data(e[0],e[1])[0]["attr"]
+                s = URIRef(self.entity.get(role,"http:www.example.com/ruolo") + "/" + str(e[0]).lower())
+                p = URIRef("http://www.example.com/genere/" + str(e[1]).lower())
+                o = URIRef((Literal(pr)))
+                self.g.add((s,p,o))
+        self.g.serialize(path,format="xml")
+        self.dump_net(ws + "/graph.pickle") #aggiornamento di net con kb probabilistica 
+    
+    def query(self,query="SELECT ?genere ?prob  WHERE {<http://www.example.org/attore/hoodie> ?genere ?prob}"):
+        result_set = [] 
+        try:
+            rows = self.g.query(query)
+
+            result_set = [] 
+            for binding in rows.bindings:
+                for k, v in binding.items():
+                    k = str(k)
+                    v = str(v)
+                    v = v.split('/')
+                    v = v[len(v)-1]
+                    result_set.append({v : k})
+            print(result_set)  
+        except:
+            print("Exception: Syntax error")   
+     
+    
