@@ -152,7 +152,7 @@ class Net:
         cPickle.dump(self.__dict__, f, 2)
         f.close()
 
-    def decoding(self,path="polarize.xml"):
+    def decoding(self,ws,path="polarize.xml"):
         for fnode in self.from_node:
             for e in self.network.edges(fnode):
                 pr = self.network.get_edge_data(e[0],e[1])[0]["probability"]
@@ -162,3 +162,14 @@ class Net:
                 o = URIRef((Literal(pr)))
                 self.g.add((s,p,o))
         self.g.serialize(path,format="xml")
+        self.dump_net(ws + "/graph.pickle") #aggiornamento di net con kb probabilistica 
+    
+    def query(self,query=""):
+        q = "SELECT ?c ?o WHERE {<http://www.example.org/autore/rocco> ?c ?o}"
+        result = self.g.query(q)
+        print(list(result))
+        '''
+        for s,p,o in self.g:
+            print(s,p,o)
+        '''
+       

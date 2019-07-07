@@ -21,6 +21,11 @@ def draw(ws):
 
 @main.command()
 @click.option("--ws")
+def query(ws):
+    cmdHandler.quering(ws)
+
+@main.command()
+@click.option("--ws")
 @click.option("--path")
 def parse(ws,path):
     cmdHandler.parseToRdf(ws,path)

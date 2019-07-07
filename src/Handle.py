@@ -95,4 +95,9 @@ class Handle:
     def parseToRdf(self,workspace,path):
         self.path_workspace = self.ws + workspace
         net  = self.loadGraph(self.path_workspace)
-        net.decoding(path)
+        net.decoding(self.path_workspace,path)
+
+    def quering(self,workspace):
+        self.path_workspace = self.ws + workspace
+        net  = self.loadGraph(self.path_workspace) 
+        net.query()
