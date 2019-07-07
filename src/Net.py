@@ -165,9 +165,12 @@ class Net:
         self.dump_net(ws + "/graph.pickle") #aggiornamento di net con kb probabilistica 
     
     def query(self,query=""):
-        q = "SELECT ?c ?o WHERE {<http://www.example.org/autore/rocco> ?c ?o}"
+       # for s,p,o in self.g:
+       #    print(s,p,o)
+        q = "SELECT ?c ?o WHERE {<http://www.example.org/attore/hoodie> ?c ?o}"
         result = self.g.query(q)
         print(list(result))
+        
         '''
         for s,p,o in self.g:
             print(s,p,o)
