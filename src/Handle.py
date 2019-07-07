@@ -31,7 +31,7 @@ class Handle:
         self.path_workspace = '.' + self.path_workspace.split('.')[1]
         
         if(os.path.isdir(self.path_workspace)):
-            print(" Workspace Existed ")
+            print(" Workspace gia' esistente ")
         else:
             os.mkdir(self.path_workspace)
             self.dumpGraph()
@@ -42,7 +42,7 @@ class Handle:
                 for folder in d:
                     print("  - " + folder)
         else:
-            print("Error: WorkSpace doesn't exists")
+            print("Errore: WorkSpace non esistente.")
 
     def loadWorkspace(self,name):
         self.path_workspace = self.ws + name
@@ -59,7 +59,7 @@ class Handle:
             self.network = self.net.get_network()
             return self.net
         except:
-            print("Exception: loading graph error")
+            print("Errore nel caricamento  del grafo.")
             return None
         
     
@@ -78,9 +78,9 @@ class Handle:
             self.load_ontologia("toystory.xml",["titolo","direttore","attore","autore"],["genere"],True)
             self.bayesanOp("toystory", ["HOODIE","ROCCO"],"CARTOON",True)
         else:
-            if(example in "tumone"):
-                self.load_ontologia("tumone.xml",["paziente","BrainTumor","SerumCalcium"],["MetastaticCancer"],True)
-                self.bayesanOp("tumone", ["TRUESC","FALSEBT"],"TRUEMC",True)
+            if(example in "metastaticcancer"):
+                self.load_ontologia("metastaticcancer.xml",["paziente","BrainTumor","SerumCalcium"],["MetastaticCancer"],True)
+                self.bayesanOp("metastaticcancer", ["TRUESC","FALSEBT"],"TRUEMC",True)
 
     def draw_graph(self,workspace):
         self.path_workspace = self.ws + workspace
@@ -88,7 +88,7 @@ class Handle:
             net = self.loadGraph(self.path_workspace)
             net.draw_network()
         except:
-            print("Exception:   ")
+            print("Errore nella visualizzazione del grafo.")
 
     def parseToRdf(self,workspace,path):
         self.path_workspace = self.ws + workspace

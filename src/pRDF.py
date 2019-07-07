@@ -12,14 +12,13 @@ from prompt_toolkit.completion import WordCompleter
 cmdHandler = Hl.Handle()
 
 
-
 @click.group()
-@click.option("--ws",help="specifica il workspace caricato")
-@click.option("--path",help="Percorso file di un ontologia da caricare o da serializzare")
-@click.option("--eg",help="Nome dell'esempio da mostrare {toystory | tumone}")
-@click.option('--about',help="Lista nodi from")
-@click.option('--to',help="Lista nodi to")
-@click.option('--prob', '-p', is_flag=True, help="calcola le probabilita' di tutte le entita' presenti nel grafo")
+# @click.option("--ws",help="specifica il workspace caricato")
+# @click.option("--path",help="Percorso file di un ontologia da caricare o da serializzare")
+# @click.option("--eg",help="Nome dell'esempio da mostrare {toystory | metastaticcancer}")
+# @click.option('--about',help="Lista nodi from")
+# @click.option('--to',help="Lista nodi to")
+# @click.option('--prob', '-p', is_flag=True, help="calcola le probabilita' di tutte le entita' presenti nel grafo")
 #@click.command("bayes",help="Apre Shell interattiva in cui e' possibile fare inferenza nella rete bayesana")
 def main():
     pass

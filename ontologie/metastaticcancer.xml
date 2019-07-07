@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:ns1="http://www.example.org/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+><rdf:Description rdf:about="http://www.example.org/paziente1">
+<ns1:paziente>nome_paziente1</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>TRUEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente2">
+<ns1:paziente>nome_paziente2</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>TRUEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente3">
+<ns1:paziente>nome_paziente3</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>TRUEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente4">
+<ns1:paziente>nome_paziente4</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>TRUEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente5">
+<ns1:paziente>nome_paziente5</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>TRUEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente6">
+<ns1:paziente>nome_paziente6</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>TRUEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente7">
+<ns1:paziente>nome_paziente7</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>TRUEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente8">
+<ns1:paziente>nome_paziente8</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>TRUEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente9">
+<ns1:paziente>nome_paziente9</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>TRUEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente10">
+<ns1:paziente>nome_paziente10</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>TRUEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente11">
+<ns1:paziente>nome_paziente11</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>TRUEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente12">
+<ns1:paziente>nome_paziente12</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>TRUEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente13">
+<ns1:paziente>nome_paziente13</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>TRUEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente14">
+<ns1:paziente>nome_paziente14</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>TRUEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente15">
+<ns1:paziente>nome_paziente15</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>TRUEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente16">
+<ns1:paziente>nome_paziente16</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>TRUEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente17">
+<ns1:paziente>nome_paziente17</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente18">
+<ns1:paziente>nome_paziente18</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente19">
+<ns1:paziente>nome_paziente19</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente20">
+<ns1:paziente>nome_paziente20</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente21">
+<ns1:paziente>nome_paziente21</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente22">
+<ns1:paziente>nome_paziente22</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente23">
+<ns1:paziente>nome_paziente23</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente24">
+<ns1:paziente>nome_paziente24</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente25">
+<ns1:paziente>nome_paziente25</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente26">
+<ns1:paziente>nome_paziente26</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente27">
+<ns1:paziente>nome_paziente27</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente28">
+<ns1:paziente>nome_paziente28</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente29">
+<ns1:paziente>nome_paziente29</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente30">
+<ns1:paziente>nome_paziente30</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente31">
+<ns1:paziente>nome_paziente31</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente32">
+<ns1:paziente>nome_paziente32</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente33">
+<ns1:paziente>nome_paziente33</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente34">
+<ns1:paziente>nome_paziente34</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente35">
+<ns1:paziente>nome_paziente35</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente36">
+<ns1:paziente>nome_paziente36</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente37">
+<ns1:paziente>nome_paziente37</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente38">
+<ns1:paziente>nome_paziente38</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente39">
+<ns1:paziente>nome_paziente39</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente40">
+<ns1:paziente>nome_paziente40</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente41">
+<ns1:paziente>nome_paziente41</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente42">
+<ns1:paziente>nome_paziente42</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente43">
+<ns1:paziente>nome_paziente43</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente44">
+<ns1:paziente>nome_paziente44</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente45">
+<ns1:paziente>nome_paziente45</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente46">
+<ns1:paziente>nome_paziente46</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente47">
+<ns1:paziente>nome_paziente47</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente48">
+<ns1:paziente>nome_paziente48</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente49">
+<ns1:paziente>nome_paziente49</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente50">
+<ns1:paziente>nome_paziente50</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente51">
+<ns1:paziente>nome_paziente51</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente52">
+<ns1:paziente>nome_paziente52</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente53">
+<ns1:paziente>nome_paziente53</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente54">
+<ns1:paziente>nome_paziente54</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente55">
+<ns1:paziente>nome_paziente55</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente56">
+<ns1:paziente>nome_paziente56</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente57">
+<ns1:paziente>nome_paziente57</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente58">
+<ns1:paziente>nome_paziente58</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente59">
+<ns1:paziente>nome_paziente59</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente60">
+<ns1:paziente>nome_paziente60</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente61">
+<ns1:paziente>nome_paziente61</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente62">
+<ns1:paziente>nome_paziente62</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente63">
+<ns1:paziente>nome_paziente63</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente64">
+<ns1:paziente>nome_paziente64</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente65">
+<ns1:paziente>nome_paziente65</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>FALSESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente66">
+<ns1:paziente>nome_paziente66</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>FALSESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente67">
+<ns1:paziente>nome_paziente67</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>FALSESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente68">
+<ns1:paziente>nome_paziente68</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>FALSESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente69">
+<ns1:paziente>nome_paziente69</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>FALSESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente70">
+<ns1:paziente>nome_paziente70</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>FALSESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente71">
+<ns1:paziente>nome_paziente71</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>FALSESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente72">
+<ns1:paziente>nome_paziente72</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>FALSESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente73">
+<ns1:paziente>nome_paziente73</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>FALSESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente74">
+<ns1:paziente>nome_paziente74</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>FALSESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente75">
+<ns1:paziente>nome_paziente75</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>FALSESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente76">
+<ns1:paziente>nome_paziente76</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>FALSESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente77">
+<ns1:paziente>nome_paziente77</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>FALSESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente78">
+<ns1:paziente>nome_paziente78</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>FALSESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente79">
+<ns1:paziente>nome_paziente79</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>FALSESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente80">
+<ns1:paziente>nome_paziente80</ns1:paziente>
+<ns1:MetastaticCancer>TRUEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>FALSESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente81">
+<ns1:paziente>nome_paziente81</ns1:paziente>
+<ns1:MetastaticCancer>FALSEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>FALSESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente82">
+<ns1:paziente>nome_paziente82</ns1:paziente>
+<ns1:MetastaticCancer>FALSEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>FALSESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente83">
+<ns1:paziente>nome_paziente83</ns1:paziente>
+<ns1:MetastaticCancer>FALSEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>FALSESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente84">
+<ns1:paziente>nome_paziente84</ns1:paziente>
+<ns1:MetastaticCancer>FALSEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>FALSESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente85">
+<ns1:paziente>nome_paziente85</ns1:paziente>
+<ns1:MetastaticCancer>FALSEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>FALSESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente86">
+<ns1:paziente>nome_paziente86</ns1:paziente>
+<ns1:MetastaticCancer>FALSEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>FALSESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente87">
+<ns1:paziente>nome_paziente87</ns1:paziente>
+<ns1:MetastaticCancer>FALSEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>FALSESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente88">
+<ns1:paziente>nome_paziente88</ns1:paziente>
+<ns1:MetastaticCancer>FALSEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>FALSESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente89">
+<ns1:paziente>nome_paziente89</ns1:paziente>
+<ns1:MetastaticCancer>FALSEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>FALSESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente90">
+<ns1:paziente>nome_paziente90</ns1:paziente>
+<ns1:MetastaticCancer>FALSEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>FALSESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente91">
+<ns1:paziente>nome_paziente91</ns1:paziente>
+<ns1:MetastaticCancer>FALSEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>FALSESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente92">
+<ns1:paziente>nome_paziente92</ns1:paziente>
+<ns1:MetastaticCancer>FALSEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>FALSESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente93">
+<ns1:paziente>nome_paziente93</ns1:paziente>
+<ns1:MetastaticCancer>FALSEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>FALSESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente94">
+<ns1:paziente>nome_paziente94</ns1:paziente>
+<ns1:MetastaticCancer>FALSEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>FALSESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente95">
+<ns1:paziente>nome_paziente95</ns1:paziente>
+<ns1:MetastaticCancer>FALSEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>FALSESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente96">
+<ns1:paziente>nome_paziente96</ns1:paziente>
+<ns1:MetastaticCancer>FALSEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>FALSESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente97">
+<ns1:paziente>nome_paziente97</ns1:paziente>
+<ns1:MetastaticCancer>FALSEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente98">
+<ns1:paziente>nome_paziente98</ns1:paziente>
+<ns1:MetastaticCancer>FALSEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente99">
+<ns1:paziente>nome_paziente99</ns1:paziente>
+<ns1:MetastaticCancer>FALSEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+<rdf:Description rdf:about="http://www.example.org/paziente100">
+<ns1:paziente>nome_paziente100</ns1:paziente>
+<ns1:MetastaticCancer>FALSEMC</ns1:MetastaticCancer>
+<ns1:SerumCalcium>TRUESC</ns1:SerumCalcium>
+<ns1:BrainTumor>FALSEBT</ns1:BrainTumor>
+</rdf:Description>
+
+</rdf:RDF>

@@ -38,7 +38,7 @@ class Net:
         try:
             return g.parse(path)
         except:
-            print("Exception: Invalid rdf path")
+            print("Errore: Percorso rdf invalido.")
 
     def get_entity(self):
         return self.entity
@@ -182,6 +182,6 @@ class Net:
                     result_set.append({v : k})
             print(result_set)  
         except:
-            print("Exception: Syntax error")   
+            print("Errore di sintassi.")   
      
     

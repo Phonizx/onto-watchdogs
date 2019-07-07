@@ -88,7 +88,7 @@ class BayesNet:
         tot_freq = self.n.totfreq
         p_FPT = self.probability_FPT(effects, tot_freq)
         if p_FPT <= 0:
-            print("p_FPT = 0!")
+            #print("p_FPT = 0!")
             return ZERO_PROB
         else:
             p_A_B = self.conditional_probability(effects, cause)
