@@ -74,9 +74,10 @@ class Handle:
         
 
     def demos(self,example):
-        if(example in "toystory"):
-            self.load_ontologia("toystory.xml",["titolo","direttore","attore","autore"],["genere"],True)
-            self.bayesanOp("toystory", ["HOODIE","ROCCO"],"CARTOON",True)
+        if(example in "film"):
+            self.load_ontologia("film.xml",["titolo","regista","attore","autore"],["genere"],True)
+            self.bayesanOp("film", ["ATTORE2","AUTORE2"],"HORROR",True)
+            self.bayesanOp("film", ["ATTORE2","AUTORE2"],"CARTOON",True)
         else:
             if(example in "metastaticcancer"):
                 self.load_ontologia("metastaticcancer.xml",["paziente","BrainTumor","SerumCalcium"],["MetastaticCancer"],True)

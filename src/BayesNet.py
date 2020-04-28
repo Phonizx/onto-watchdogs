@@ -21,8 +21,15 @@ class BayesNet:
                         nodi.remove(cas)
             except:
                 print(end="")
+        '''
+        for cause in self.to_node:
+            self.probability_priori(cause, self.n.totfreq)
+            for n in nodi:
+                self.conditional_probability(n, cause)
+        '''
         for cause in self.to_node:
             self.bayes_calc(cause, nodi)
+        #'''
 
 
 
@@ -93,5 +100,5 @@ class BayesNet:
         else:
             p_A_B = self.conditional_probability(effects, cause)
             pr = self.probability_priori(cause, tot_freq)
-            bayesP = (p_A_B * pr) / p_FPT
+            bayesP = round(((p_A_B * pr) / p_FPT),2)
             return bayesP if bayesP > 0 else ZERO_PROB

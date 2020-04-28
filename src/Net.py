@@ -143,7 +143,7 @@ class Net:
         return outdegree
 
     def draw_network(self):
-        pos = nx.spring_layout(self.network)
+        pos = nx.spring_layout(self.network,k=100)
         nx.draw_networkx_edge_labels(self.network, pos,
                                         font_size=10, font_color='k', font_family='sans-serif',
                                         font_weight='normal', alpha=2.0, bbox=None, ax=None, rotate=False)
