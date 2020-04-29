@@ -18,9 +18,9 @@ class Handle:
         for file in glob.glob("*.xml"):
             print("\t- " + file.title())
     
-    def load_ontologia(self,demo,_from,to,init=False): #warning, load ontologia NON DEMO
+    def load_ontologia(self, demo, _from, to, init=False): #warning, load ontologia NON DEMO
         self.net = nt.Net()
-        self.net.load_graph("../ontologie/" + demo,_from,to)
+        self.net.load_graph("../ontologie/" + demo, _from, to)
 
         if(init):
             bayes = bn.BayesNet(self.net)
