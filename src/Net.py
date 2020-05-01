@@ -8,7 +8,10 @@ from rdflib.collection import Collection
 from rdflib import ConjunctiveGraph, URIRef, RDFS
 import re
 import _pickle as cPickle
+import sys
+import random
 
+ZERO_PROB = sys.float_info.min
 PREDICATI = ["annotatedSource", "annotatedTarget", "probability"]
 
 class Net:
@@ -24,6 +27,7 @@ class Net:
         self.to_node = []
         self.from_node = set()
         self.g = self.load_rdf(path_rdf)
+        self.totfreq=1
         if to[0] == PREDICATI[1]:
             self.parse_to_graph_probabilistic(self.g, _from, to)
         else:
@@ -116,12 +120,11 @@ class Net:
                 else:
                     self.network.add_edge(o, to_item, attr=p, weight=1)
         return self.network
-    
+
     def parse_to_graph_probabilistic(self, g, _from, to, target=None):
         g = self.g
         self.parse_entity(g, _from, to)  # parsing dei singoli nodi To
         for s, p, o in g:
-            #print(type(s),s,p,o)
             s, p, o = self.filter(s, p, o)
             if(s in self.dsub.keys()):  # se il soggeto è stato già trovato
                 if(p in self.dsub[s].keys()):   # se il predicato è stato già trovato
@@ -134,25 +137,46 @@ class Net:
                         self.dsub[s][p].append(tmp)
                         self.dsub[s][p].append(o)
                 else:
-                    # predicato sconosciuto
                     self.dsub[s][p] = o
             else:
                 self.dsub[s] = {}
                 self.dsub[s][p] = o
-
+        nodi = set()
         for k, v in self.dsub.items():
-            
-            if k[0] == "N":
+            if k[0] == "N" or  k[0] == "T" :
                 sogg, ogg, prob = v[_from[0]], v[to[0]], v[_from[1]]
+                nodi.add(sogg)
+                nodi.add(ogg)
                 self.add_node([sogg, ogg])
+                self.to_node.append(ogg)
                 self.network.add_edge(sogg, ogg, probability=float(prob))
+            else:
+                if k[0]=="g":
+                    nodi.add(k.split("#")[1])
+                    try:
+                        tmp = v["subClassOf"]
+                        if isinstance(tmp, list):
+                            for x in v:
+                                nodi.add(x)
+                        else:
+                            nodi.add(tmp)
+                    except:
+                        pass
+        self.to_node =list(set(self.to_node))
+        
+        da_eliminare = ["type","Thing","subClassOf","type","ObsoleteClass"]
+        eliminati = 0
+        for e in da_eliminare:
+            if e in nodi:
+                nodi.remove(e)
+                eliminati +=1 
+        self.totfreq = len(nodi)-eliminati
         return self.network
 
     def add_node(self, x):
         if isinstance(x, list):
             for e in x:
                 self.add_node(e)
-        
         else:
             if (x not in self.network.nodes()):
                 self.network.add_node(x)
@@ -179,8 +203,11 @@ class Net:
         outdegree = 0
         out_edges = list(self.network.out_edges(node, data=True))
         if to == None:  # richiede il totale di archi uscenti
-            for out_edge in out_edges:
-                outdegree += out_edge[2][weight]
+            try:
+                for out_edge in out_edges:
+                    outdegree += out_edge[2][weight]
+            except:
+                out_edge=ZERO_PROB
         else:
             for out_edge in out_edges:
                 if out_edge[1] == to:
@@ -232,3 +259,29 @@ class Net:
             print(result_set)
         except:
             print("Errore di sintassi.")
+
+    def random_node_pair(self):
+        len_to = len(self.to_node)-1
+
+        while True:
+            to = random.randint(0, len_to)
+            a = self.to_node[to]
+            if a[0] == "C" or a[0] == "N" or a[0] == "T":
+                out_edges = list(self.network.out_edges(a, data=True))
+                
+                if len(out_edges) > 0:
+                    b = out_edges[random.randint(0, len(out_edges)-1)][1]
+                    break
+
+        # while True:
+        #     to = random.randint(0, len_to)
+        #     b = self.to_node[to]
+        #     if b[0] == "C" or b[0] == "N" or b[0] == "T":
+        #         break
+
+        primo = random.randint(0, 1)
+        if primo == 1:
+            return a, b
+        else:
+            return b, a
+

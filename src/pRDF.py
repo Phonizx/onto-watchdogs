@@ -17,7 +17,7 @@ cmdHandler = Hl.Handle()
 # @click.option('--about', help="Lista nodi from")
 # @click.option('--to', help="Lista nodi to")
 # @click.option('--prob', '-p', is_flag=True, help="calcola le probabilita' di tutte le entita' presenti nel grafo")
-# @click.command("bayes", help="Apre Shell interattiva in cui e' possibile fare inferenza nella rete bayesana")
+# @click.command("bayes", help="Apre Shell interattiva in cui e' possibile fare inferenza nella rete bayesiana")
 def main():
     pass
 
@@ -25,7 +25,7 @@ def main():
 def show():
     cmdHandler.show_ontologies()
 
-@main.command(help="Visualizza la rete bayesana")
+@main.command(help="Visualizza la rete bayesiana")
 @click.option("--ws")
 def draw(ws):
     cmdHandler.draw_graph(ws)
@@ -72,7 +72,7 @@ def parseList(arg):
     args = arg.split(',')
     return args
 
-@main.command(context_settings=dict(help_option_names=['-h', '--help']), help="Crea da un ontologia una rete bayesana")
+@main.command(context_settings=dict(help_option_names=['-h', '--help']), help="Crea da un ontologia una rete bayesiana")
 @click.argument("path")
 @click.option('--about')
 @click.option('--to')
@@ -99,7 +99,7 @@ def parserBayes(testo):
     else:
         return None, None
 
-@main.command(help="Apre Shell interattiva per l'inferenza nella rete bayesana")
+@main.command(help="Apre Shell interattiva per l'inferenza nella rete bayesiana")
 @click.option("--ws")
 def bayes(ws):
         EntityCompleters = WordCompleter([""], ignore_case=True)
@@ -119,7 +119,7 @@ def bayes(ws):
                         )
                 effects, cause = parserBayes(bayes)
                 if(effects is not None and cause is not None or  "exit" not in bayes):
-                        cmdHandler.bayesanOp(ws, effects, cause)
+                        cmdHandler.bayesianOp(ws, effects, cause)
                 else:
                         shell = False
                         #print("Exception query")

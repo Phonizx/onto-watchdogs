@@ -1,0 +1,3489 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://cohse.semanticweb.org/ontologies/people#"
+     xml:base="http://cohse.semanticweb.org/ontologies/people"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:disponte="https://sites.google.com/a/unife.it/ml/disponte#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:go="http://www.geneontology.org/go#">
+    <owl:Ontology rdf:about="http://cohse.semanticweb.org/ontologies/people"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <owl:AnnotationProperty rdf:about="https://sites.google.com/a/unife.it/ml/disponte#probability"/>
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.32210</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000582"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000776"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.52794</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000560"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000776"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.79432</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000092"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000518"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+
+    <!-- http://www.geneontology.org/go#CL_0000000 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000000">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000289"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.41877</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000000"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000289"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000003 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000003">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000204"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000256"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.50713</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000003"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000256"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.40696</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000003"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000204"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000009 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000009"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000011 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000011">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000070"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.64751</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000011"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000070"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000013 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000013">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000377"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.28844</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000013"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000377"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000017 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000017">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000090"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000505"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.49429</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000017"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000090"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.60671</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000017"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000505"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000018 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000018"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000034 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000034">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000718"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.64665</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000034"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000718"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000041 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000041">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000327"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.67776</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000041"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000327"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000042 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000042">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000215"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.95413</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000042"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000215"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000049 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000049">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000085"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.59076</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000049"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000085"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000050 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000050">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000423"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.60485</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000050"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000423"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000053 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000053">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000705"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.51005</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000053"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000705"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000054 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000054">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000637"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.93575</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000054"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000637"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000056 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000056">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000563"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.43869</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000056"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000563"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000060 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000060">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000837"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.97054</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000060"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000837"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000061 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000061"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000063 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000063">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000324"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.55711</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000063"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000324"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000069 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000069">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000432"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000455"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.53614</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000069"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000455"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.45343</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000069"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000432"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000070 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000070"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000071 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000071"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000075 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000075">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000822"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.51415</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000075"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000822"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000077 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000077">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000278"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.60436</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000077"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000278"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000078 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000078">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000694"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.34438</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000078"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000694"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000080 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000080">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000638"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000726"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.36775</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000080"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000726"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.4697</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000080"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000638"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000081 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000081"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000085 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000085"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000086 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000086">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000187"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000676"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.32153</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000086"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000676"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.92225</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000086"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000187"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000090 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000090">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000657"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.39907</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000090"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000657"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000092 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000092"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000095 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000095">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000214"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.3701</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000095"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000214"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000096 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000096">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000334"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.35501</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000096"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000334"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000099 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000099"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000101 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000101">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000252"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.58693</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000101"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000252"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000102 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000102"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000103 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000103"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000104 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000104">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000778"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.338</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000104"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000778"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000110 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000110">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000263"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.96782</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000110"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000263"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000115 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000115">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000071"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.60383</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000071"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000115"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000120 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000120">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000095"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.76173</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000095"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000120"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000121 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000121">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000275"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.55956</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000121"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000275"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000123 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000123"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000125 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000125">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000185"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000738"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000125"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000738"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.43601</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000125"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000185"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000131 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000131">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000281"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000355"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000576"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.53451</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000131"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000281"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.51401</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000131"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000576"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.37399</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000131"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000355"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000135 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000135"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000143 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000143"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000144 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000144">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000143"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.42201</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000143"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000144"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000146 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000146">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000034"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000603"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.55024</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000146"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000603"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000034"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000146"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000151 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000151"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000160 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000160">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000772"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.6079</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000160"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000772"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000162 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000162">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000178"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.43152</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000162"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000178"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000164 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000164">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000146"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000201"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000457"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.66434</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000164"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000201"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.57774</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000164"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000457"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.48085</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000146"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000164"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000166 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000166">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000458"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.36064</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000166"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000458"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000171 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000171">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000103"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000355"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.78468</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000103"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000171"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.34656</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000171"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000355"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000172 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000172">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000605"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.55166</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000172"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000605"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000173 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000173">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000092"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.70758</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000092"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000173"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000177 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000177"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000178 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000178">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000749"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.56841</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000178"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000749"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000179 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000179">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000633"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.65341</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000179"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000633"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000185 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000185">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000120"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000234"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.79544</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000185"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000234"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.73667</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000120"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000185"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000186 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000186">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000131"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.43951</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000131"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000186"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000187 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000187">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000522"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.76618</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000187"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000522"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000189 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000189">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000302"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.59591</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000189"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000302"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000201 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000201">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000160"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.66614</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000160"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000201"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000204 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000204"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000207 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000207">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000104"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000271"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000275"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.59766</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000104"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000207"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.58761</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000207"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000275"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.46461</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000207"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000271"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000214 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000214"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000215 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000215">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000110"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.50023</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000110"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000215"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000221 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000221">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000378"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.8515</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000221"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000378"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000227 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000227">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000061"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.49125</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000061"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000227"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000230 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000230">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000551"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.46393</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000230"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000551"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000231 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000231">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000221"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.63942</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000221"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000231"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000234 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000234">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000837"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.90698</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000234"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000837"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000237 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000237">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000621"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000780"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.50712</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000237"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000621"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.42755</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000237"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000780"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000245 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000245">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000099"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.96714</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000099"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000245"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000249 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000249">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000009"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.36589</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000009"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000249"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000252 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000252">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000034"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.91165</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000034"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000252"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000253 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000253"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000255 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000255">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000042"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.45733</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000042"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000255"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000256 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000256"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000258 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000258">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000077"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000432"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.59892</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000077"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000258"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.55725</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000258"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000432"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000260 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000260"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000263 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000263"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000264 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000264">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000123"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.70943</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000123"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000264"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000268 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000268">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000812"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.68519</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000268"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000812"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000270 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000270">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000172"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.64085</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000172"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000270"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000271 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000271"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000272 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000272">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000144"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000144"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000272"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000275 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000275">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000479"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.51279</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000275"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000479"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000278 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000278"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000280 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000280">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000310"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.53396</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000280"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000310"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000281 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000281">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000253"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.51836</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000253"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000281"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000289 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000289">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000580"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.4959</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000289"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000580"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000290 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000290">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000718"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.71588</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000290"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000718"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000294 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000294">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000061"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000538"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.47582</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000061"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000294"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.52498</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000294"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000538"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000295 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000295"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000301 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000301"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000302 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000302"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000304 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000304">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000103"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000547"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.7962</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000103"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000304"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.33457</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000304"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000547"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000308 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000308">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000102"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000151"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.96542</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000151"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000308"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.52171</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000102"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000308"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000310 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000310"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000324 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000324"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000327 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000327"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000329 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000329">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000331"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000816"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.41809</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000329"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000816"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.50694</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000329"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000331"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000331 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000331">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000347"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.48026</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000331"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000347"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000334 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000334">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000092"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000508"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.40367</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000334"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000508"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.71561</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000092"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000334"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000338 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000338"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000339 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000339">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000687"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.55404</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000339"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000687"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000341 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000341">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000443"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.43526</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000341"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000443"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000344 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000344">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000327"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000481"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.67501</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000327"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000344"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.48813</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000344"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000481"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000347 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000347">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000690"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000724"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000822"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.54095</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000347"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000724"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.41955</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000347"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000690"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.50829</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000347"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000822"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000352 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000352">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000075"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000075"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000352"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000355 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000355">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000401"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.51523</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000355"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000401"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000359 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000359">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000123"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000263"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.7201</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000123"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000359"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.92669</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000263"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000359"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000362 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000362">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000790"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.64693</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000362"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000790"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000363 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000363"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000367 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000367">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000177"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000573"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.6717</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000367"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000573"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.76174</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000177"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000367"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000370 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000370"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000374 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000374">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000215"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.89347</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000215"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000374"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000377 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000377">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000329"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000756"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.62062</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000329"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000377"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.44079</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000377"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000756"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000378 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000378">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000275"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.52544</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000275"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000378"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000381 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000381">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000730"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.37024</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000381"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000730"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000382 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000382">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000407"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.57033</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000382"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000407"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000390 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000390"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000393 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000393">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000215"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.90145</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000215"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000393"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000395 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000395"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000397 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000397">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000092"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.7728</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000092"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000397"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000401 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000401"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000404 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000404">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000648"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.42944</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000404"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000648"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000405 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000405">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000301"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.55296</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000301"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000405"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000407 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000407"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000423 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000423">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000563"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.47351</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000423"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000563"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000431 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000431">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000457"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.58164</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000431"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000457"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000432 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000432">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000166"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.62715</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000166"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000432"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000433 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000433">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000643"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.59705</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000433"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000643"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000438 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000438">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000173"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000830"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.34357</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000438"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000830"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.28338</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000173"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000438"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000443 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000443">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000390"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000505"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000846"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.45826</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000443"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000846"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.4849</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000443"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000505"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.49743</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000390"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000443"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000446 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000446">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000341"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.47071</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000341"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000446"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000452 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000452">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000363"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.85131</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000363"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000452"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000455 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000455"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000457 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000457">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000485"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.52254</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000457"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000485"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000458 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000458"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000461 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000461">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000579"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000737"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.44601</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000461"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000737"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.4981</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000461"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000579"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000463 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000463"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000479 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000479">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000270"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000750"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.55558</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000479"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000750"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.73501</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000270"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000479"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000480 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000480">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000081"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.7355</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000081"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000480"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000481 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000481"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000485 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000485"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000488 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000488">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000263"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000738"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000488"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000738"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.91085</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000263"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000488"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000491 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000491">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000517"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.3239</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000491"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000517"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000505 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000505">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000404"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000404"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000505"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000508 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000508"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000514 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000514">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000264"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000690"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.45729</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000264"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000514"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.58804</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000514"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000690"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000517 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000517"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000518 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000518"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000522 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000522"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000523 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000523">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000221"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.63909</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000221"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000523"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000532 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000532">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000179"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000407"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.45725</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000179"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000532"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.61195</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000407"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000532"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000538 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000538"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000541 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000541"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000543 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000543">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000395"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.37994</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000395"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000543"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000547 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000547"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000551 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000551">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000397"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.41985</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000397"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000551"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000553 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000553"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000557 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000557">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000699"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.55103</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000557"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000699"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000563 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000563"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000571 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000571">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000621"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.5285</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000571"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000621"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000573 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000573"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000576 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000576">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000120"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.75056</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000120"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000576"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000578 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000578"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000579 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000579"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000580 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000580">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000049"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.43672</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000049"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000580"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000584 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000584"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000585 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000585">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000060"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000121"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000458"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.54189</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000060"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000585"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.3263</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000458"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000585"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.73114</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000121"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000585"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000586 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000586"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000589 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000589">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000135"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.68278</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000135"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000589"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000602 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000602">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000390"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.49327</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000390"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000602"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000603 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000603">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000103"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.76568</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000103"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000603"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000605 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000605"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000621 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000621"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000622 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000622">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000837"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.88411</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000622"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000837"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000633 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000633">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000518"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.81037</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000518"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000633"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000636 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000636">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000227"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.65605</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000227"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000636"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000637 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000637"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000638 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000638">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000294"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000759"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.41277</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000294"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000638"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.33143</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000638"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000759"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000643 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000643">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000280"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.58267</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000280"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000643"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000648 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000648">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000771"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.74202</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000648"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000771"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000652 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000652">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000135"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.48088</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000135"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000652"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000657 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000657">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000290"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.38035</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000290"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000657"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000660 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000660">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000260"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000738"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000660"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000738"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.71969</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000260"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000660"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000668 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000668"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000670 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000670">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000740"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000798"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.56064</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000670"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000798"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.57419</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000670"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000740"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000672 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000672">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000736"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.45347</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000672"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000736"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000673 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000673"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000676 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000676">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000777"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.43823</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000676"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000777"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000678 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000678">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000370"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000829"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.59736</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000678"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000829"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.44677</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000370"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000678"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000680 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000680">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000463"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.55194</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000463"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000680"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000687 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000687">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000214"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.29807</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000214"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000687"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000690 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000690">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000201"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.69882</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000201"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000690"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000694 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000694">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000280"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000573"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000837"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.7333</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000573"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000694"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.91025</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000694"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000837"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.55138</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000280"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000694"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000695 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000695">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000780"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.37365</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000695"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000780"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000696 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000696">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000586"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.91742</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000586"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000696"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000699 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000699"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000701 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000701">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000018"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.49587</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000018"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000701"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000705 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000705"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000718 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000718"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000719 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000719">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000638"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.47339</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000638"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000719"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000722 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000722">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000508"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.51304</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000508"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000722"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000724 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000724">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000264"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.42878</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000264"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000724"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000726 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000726">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000295"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000404"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.94087</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000404"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000726"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.40078</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000295"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000726"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000730 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000730">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000071"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.44598</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000071"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000730"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000736 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000736">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000829"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.527</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000736"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000829"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000737 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000737"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000738 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000738"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000740 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000740">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000673"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.51124</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000673"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000740"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000742 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000742">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000289"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000771"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.42119</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000289"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000742"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.6572</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000742"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000771"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000744 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000744"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000747 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000747">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000578"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.66777</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000578"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000747"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000749 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000749"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000750 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000750">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000541"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.52435</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000541"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000750"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000756 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000756"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000759 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000759">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000302"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.63811</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000302"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000759"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000761 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000761">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000856"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.58999</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000761"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000856"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000764 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000764">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000329"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000480"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.68043</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000329"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000764"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.42808</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000480"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000764"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000771 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000771">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000304"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000432"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000553"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.44314</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000304"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000771"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.55597</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000553"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000771"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.54003</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000432"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000771"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000772 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000772"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000774 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000774">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000481"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.68406</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000481"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000774"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000777 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000777"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000778 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000778">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000393"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000393"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000778"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000780 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000780"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000790 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000790"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000791 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000791">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000796"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.74857</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000791"/>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000796"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000796 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000796"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000798 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000798">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000189"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.59708</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000189"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000798"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000806 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000806">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000446"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.5166</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000446"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000806"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000810 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000810">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000374"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000443"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.54512</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000443"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000810"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.474</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000374"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000810"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000812 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000812"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000816 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000816">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000668"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.717</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000668"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000816"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000822 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000822"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000829 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000829"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000830 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000830"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000832 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000832">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000648"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000744"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.50154</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000744"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000832"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.62409</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000648"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000832"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000837 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000837">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000738"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000738"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000837"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000838 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000838">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000771"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.64097</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000771"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000838"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000842 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000842">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000096"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000838"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.47988</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000838"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000842"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.48692</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000096"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000842"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000846 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000846">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000736"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.4372</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000736"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000846"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000847 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000847">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000338"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000423"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000543"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.63557</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000338"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000847"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.46439</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000543"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000847"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.61401</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000423"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000847"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000855 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000855">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000553"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.59349</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000553"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000855"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000856 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000856"/>
+    
+
+
+    <!-- http://www.geneontology.org/go#CL_0000859 -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/go#CL_0000859">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000584"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.46157</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000584"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/go#CL_0000859"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000053"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000056"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000060"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000099"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000110"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000131"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000144"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000151"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000173"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000204"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000245"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000253"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000268"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000294"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000310"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000370"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000378"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000397"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000485"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000543"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000602"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000687"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000701"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000738"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/go#CL_0000812"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000144"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.62145</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000602"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.44526</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000310"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.79426</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000268"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.59369</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000053"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.58173</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000253"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.96066</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000151"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.48599</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000110"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.88568</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000099"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.40696</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000204"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.38114</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000370"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.72714</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000812"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.87327</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000378"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.44437</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000687"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.25746</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000173"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.48832</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000060"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.41398</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000294"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.40831</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000131"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.55396</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000485"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.78581</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000056"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.57047</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000245"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.43564</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000543"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000738"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.50905</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000701"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.40021</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://www.geneontology.org/go#CL_0000397"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Axiom>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.1.0.1602) http://owlapi.sourceforge.net -->
+

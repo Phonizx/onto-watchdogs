@@ -1,7 +1,7 @@
 import Net as nt
 import sys
-ZERO_PROB = sys.float_info.min
 
+ZERO_PROB = sys.float_info.min
 
 class BayesNet:
 
@@ -22,15 +22,8 @@ class BayesNet:
                         nodi.remove(cas)
             except:
                 print(end="")
-        '''
-        for cause in self.to_node:
-            self.probability_priori(cause, self.n.totfreq)
-            for n in nodi:
-                self.conditional_probability(n, cause)
-        '''
         for cause in self.to_node:
             self.bayes_calc(cause, nodi)
-        # '''
 
 
     def normalize_zero(self, prob):
@@ -41,8 +34,12 @@ class BayesNet:
             try:
                 pr = self.graph.get_edge_data(B, B+"_freq")[0]["probability"]
             except:
-                pr = self.graph.get_edge_data(B, B+"_freq")[0]["freq"]/N
-                self.add_prob_edge(B, B+"_freq", pr)
+                try:
+                    pr = self.graph.get_edge_data(B, B+"_freq")[0]["freq"]/N
+                    self.add_prob_edge(B, B+"_freq", pr)
+                except:
+                    pr = ZERO_PROB
+                    self.add_prob_edge(B, B+"_freq", pr)
             return self.normalize_zero(pr)
         else:
             #print("N = 0!")
@@ -69,10 +66,14 @@ class BayesNet:
                     p_A_B = self.graph.get_edge_data(
                         node[0], to)[0]["probability"]
                 except:
-                    p_A_B = self.n.numOutDegree(
-                        node[0], to) / self.n.numOutDegree(node[0])
-                    p_A_B = self.normalize_zero(p_A_B)
-                    self.add_prob_edge(node[0], to, p_A_B)
+                    if self.n.numOutDegree(node[0]) == 0:
+                        p_A_B = ZERO_PROB
+                        self.add_prob_edge(node[0], to, p_A_B)
+                    else:
+                        p_A_B = self.n.numOutDegree(
+                            node[0], to) / self.n.numOutDegree(node[0])
+                        p_A_B = self.normalize_zero(p_A_B)
+                        self.add_prob_edge(node[0], to, p_A_B)
                 p = p_A_B * self.conditional_probability(node[1:], to)
             else:
                 if len(node) == 1:
@@ -81,9 +82,13 @@ class BayesNet:
             try:
                 p = self.graph.get_edge_data(node, to)[0]["probability"]
             except:
-                p = self.n.numOutDegree(node, to) / self.n.numOutDegree(node)
-                p = self.normalize_zero(p)
-                self.add_prob_edge(node, to, p)
+                try:
+                    p = self.n.numOutDegree(node, to) / self.n.numOutDegree(node)
+                    p = self.normalize_zero(p)
+                    self.add_prob_edge(node, to, p)
+                except:
+                    p = ZERO_PROB
+                    self.add_prob_edge(node, to, p)
         return p
 
     def probability_FPT(self, Bs, N):
@@ -96,8 +101,10 @@ class BayesNet:
         return P_B
 
     def bayes_calc(self, cause, effects):
+
         tot_freq = self.n.totfreq
         p_FPT = self.probability_FPT(effects, tot_freq)
+
         if p_FPT <= 0:
             #print("p_FPT = 0!")
             return ZERO_PROB
