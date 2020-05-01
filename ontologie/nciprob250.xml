@@ -1,0 +1,3462 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://cohse.semanticweb.org/ontologies/people#"
+     xml:base="http://cohse.semanticweb.org/ontologies/people"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:disponte="https://sites.google.com/a/unife.it/ml/disponte#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:human="http://human.owl#"
+     xmlns:go="http://www.geneontology.org/go#">
+    <owl:Ontology rdf:about="http://cohse.semanticweb.org/ontologies/people"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="https://sites.google.com/a/unife.it/ml/disponte#probability"/>
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://human.owl#NCI_C12221 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12221"/>
+    
+
+
+    <!-- http://human.owl#NCI_C12228 -->
+
+	<owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.7426</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C52687"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32579"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Class rdf:about="http://human.owl#NCI_C12228">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32038"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C52827"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.7426</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C12228"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32038"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.54711</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C12228"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C52827"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C12244 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12244">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32267"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.36605</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C12244"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32267"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C12249 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12249">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33239"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.62593</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C12249"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33239"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C12269 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12269">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12571"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.60411</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C12269"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12571"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C12294 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12294"/>
+    
+
+
+    <!-- http://human.owl#NCI_C12296 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12296">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C13063"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33313"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.42935</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C12296"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C13063"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.50648</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C12296"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33313"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C12298 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12298">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32983"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.54381</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C12298"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32983"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C12312 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12312">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C13046"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.76389</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C12312"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C13046"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C12320 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12320">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C43374"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.50588</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C12320"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C43374"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C12333 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12333"/>
+    
+
+
+    <!-- http://human.owl#NCI_C12350 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12350">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33334"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.55726</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C12350"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33334"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C12385 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12385"/>
+    
+
+
+    <!-- http://human.owl#NCI_C12400 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12400"/>
+    
+
+
+    <!-- http://human.owl#NCI_C12408 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12408"/>
+    
+
+
+    <!-- http://human.owl#NCI_C12411 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12411"/>
+    
+
+
+    <!-- http://human.owl#NCI_C12419 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12419">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C13063"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.5284</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C12419"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C13063"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C12451 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12451">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12408"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.47569</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12408"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C12451"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C12464 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12464"/>
+    
+
+
+    <!-- http://human.owl#NCI_C12467 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12467"/>
+    
+
+
+    <!-- http://human.owl#NCI_C12510 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12510">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C52688"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.64855</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C12510"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C52688"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C12511 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12511">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33117"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.48838</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C12511"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33117"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C12532 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12532">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C52812"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.43023</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C12532"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C52812"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C12535 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12535">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12551"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32447"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.49897</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C12535"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12551"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.61207</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C12535"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32447"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C12542 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12542"/>
+    
+
+
+    <!-- http://human.owl#NCI_C12551 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12551">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33554"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.41395</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C12551"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33554"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C12571 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12571"/>
+    
+
+
+    <!-- http://human.owl#NCI_C12588 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12588"/>
+    
+
+
+    <!-- http://human.owl#NCI_C12596 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12596">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12296"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.30957</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12296"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C12596"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C12597 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12597"/>
+    
+
+
+    <!-- http://human.owl#NCI_C12602 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12602"/>
+    
+
+
+    <!-- http://human.owl#NCI_C12605 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12605"/>
+    
+
+
+    <!-- http://human.owl#NCI_C12617 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12617"/>
+    
+
+
+    <!-- http://human.owl#NCI_C12625 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12625">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C13090"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.61626</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C12625"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C13090"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C12636 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12636">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32306"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.65121</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C12636"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32306"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C12640 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12640"/>
+    
+
+
+    <!-- http://human.owl#NCI_C12656 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12656">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C49018"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.51911</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C12656"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C49018"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C12664 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12664">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32447"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.71226</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C12664"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32447"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C12705 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12705">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C13159"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.63417</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C12705"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C13159"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C12717 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12717">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12865"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.63434</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C12717"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12865"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C12725 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12725">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12705"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.50729</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12705"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C12725"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C12754 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12754">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12907"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.67718</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C12754"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12907"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C12761 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12761">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32674"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32776"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.51473</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C12761"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32674"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.67891</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C12761"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32776"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C12768 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12768">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32496"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.56831</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C12768"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32496"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C12774 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12774">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C45723"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.5939</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C12774"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C45723"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C12784 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12784">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33858"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.58885</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C12784"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33858"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C12790 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12790">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33292"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.47455</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C12790"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33292"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C12806 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12806">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32835"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.42836</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C12806"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32835"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C12807 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12807">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12464"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.55423</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12464"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C12807"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C12820 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12820"/>
+    
+
+
+    <!-- http://human.owl#NCI_C12857 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12857"/>
+    
+
+
+    <!-- http://human.owl#NCI_C12863 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12863">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12996"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.6013</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C12863"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12996"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C12865 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12865">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C52688"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.70468</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C12865"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C52688"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C12888 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12888"/>
+    
+
+
+    <!-- http://human.owl#NCI_C12895 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12895">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C13158"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.83142</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C12895"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C13158"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C12899 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12899">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33022"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.24437</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C12899"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33022"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C12907 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12907"/>
+    
+
+
+    <!-- http://human.owl#NCI_C12915 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12915">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32072"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33601"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.66106</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C12915"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32072"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.54768</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C12915"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33601"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C12932 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12932">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33879"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C39686"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.37337</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C12932"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C39686"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.38027</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C12932"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33879"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C12938 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12938">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32766"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.5053</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C12938"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32766"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C12957 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12957"/>
+    
+
+
+    <!-- http://human.owl#NCI_C12985 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12985">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C49482"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.77019</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C12985"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C49482"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C12996 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C12996">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C52950"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.64755</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C12996"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C52950"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C13046 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C13046"/>
+    
+
+
+    <!-- http://human.owl#NCI_C13063 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C13063"/>
+    
+
+
+    <!-- http://human.owl#NCI_C13073 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C13073">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12510"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33579"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.61931</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C13073"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33579"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.75003</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12510"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C13073"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C13084 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C13084">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C49601"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.47029</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C13084"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C49601"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C13085 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C13085">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C17008"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.49439</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C13085"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C17008"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C13086 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C13086">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C13090"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.56112</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C13086"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C13090"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C13087 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C13087">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C38436"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.51155</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C13087"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C38436"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C13090 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C13090"/>
+    
+
+
+    <!-- http://human.owl#NCI_C13092 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C13092"/>
+    
+
+
+    <!-- http://human.owl#NCI_C13118 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C13118"/>
+    
+
+
+    <!-- http://human.owl#NCI_C13129 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C13129"/>
+    
+
+
+    <!-- http://human.owl#NCI_C13147 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C13147"/>
+    
+
+
+    <!-- http://human.owl#NCI_C13158 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C13158"/>
+    
+
+
+    <!-- http://human.owl#NCI_C13159 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C13159">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C49212"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.6957</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C13159"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C49212"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C13180 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C13180">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33926"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.56809</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C13180"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33926"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C13191 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C13191"/>
+    
+
+
+    <!-- http://human.owl#NCI_C13250 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C13250">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12865"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.55002</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12865"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C13250"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C13261 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C13261">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12408"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32306"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33233"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.64829</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C13261"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32306"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.50737</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12408"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C13261"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.54121</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C13261"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33233"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C13278 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C13278">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C13191"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32306"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.7319</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C13191"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C13278"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.60232</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C13278"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32306"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C13325 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C13325">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C17008"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.59059</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C13325"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C17008"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C13347 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C13347">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12807"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33571"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.65307</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C13347"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33571"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.45072</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12807"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C13347"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C13722 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C13722"/>
+    
+
+
+    <!-- http://human.owl#NCI_C13823 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C13823">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C13158"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33805"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.60984</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C13823"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33805"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.86596</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C13158"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C13823"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C13824 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C13824">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32506"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33149"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.54679</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C13824"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32506"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.59023</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C13824"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33149"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C17008 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C17008">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12312"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C43374"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.74395</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C17008"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C43374"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.48483</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12312"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C17008"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C25444 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C25444">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12625"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12640"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32275"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32700"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.47748</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C25444"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32700"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.57662</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12640"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C25444"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.56601</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C25444"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32275"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.63441</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12625"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C25444"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C28401 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C28401">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32983"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33334"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.57546</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C28401"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33334"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.57098</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C28401"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32983"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C32038 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C32038">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C13722"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33437"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.48502</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C32038"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33437"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.64376</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C13722"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C32038"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C32040 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C32040">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C13250"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32072"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C49218"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.5239</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C13250"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C32040"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.41704</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C32040"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C49218"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.47811</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C32040"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32072"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C32045 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C32045"/>
+    
+
+
+    <!-- http://human.owl#NCI_C32072 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C32072">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33752"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.50172</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C32072"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33752"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C32086 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C32086">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12385"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.5375</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12385"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C32086"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C32116 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C32116"/>
+    
+
+
+    <!-- http://human.owl#NCI_C32127 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C32127"/>
+    
+
+
+    <!-- http://human.owl#NCI_C32177 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C32177">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32656"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.4167</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C32177"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32656"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C32190 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C32190">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12725"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32978"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.54797</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12725"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C32190"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.71471</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C32190"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32978"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C32224 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C32224">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33544"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.58078</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C32224"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33544"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C32244 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C32244">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12221"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.69208</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12221"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C32244"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C32267 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C32267"/>
+    
+
+
+    <!-- http://human.owl#NCI_C32275 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C32275">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12820"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32964"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33358"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.56118</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C32275"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33358"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.6457</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12820"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C32275"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.50921</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C32275"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32964"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C32278 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C32278"/>
+    
+
+
+    <!-- http://human.owl#NCI_C32306 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C32306"/>
+    
+
+
+    <!-- http://human.owl#NCI_C32336 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C32336"/>
+    
+
+
+    <!-- http://human.owl#NCI_C32338 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C32338">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C13084"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.37246</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C13084"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C32338"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C32420 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C32420"/>
+    
+
+
+    <!-- http://human.owl#NCI_C32428 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C32428">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33596"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.62581</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C32428"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33596"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C32447 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C32447"/>
+    
+
+
+    <!-- http://human.owl#NCI_C32450 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C32450"/>
+    
+
+
+    <!-- http://human.owl#NCI_C32496 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C32496"/>
+    
+
+
+    <!-- http://human.owl#NCI_C32506 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C32506">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12532"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.58621</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12532"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C32506"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C32513 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C32513">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32086"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32995"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.68899</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C32513"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32995"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.46464</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32086"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C32513"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C32538 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C32538">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12806"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.57577</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12806"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C32538"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C32539 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C32539">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33914"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.46199</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C32539"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33914"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C32559 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C32559">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12602"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C13824"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32072"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.45841</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12602"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C32559"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.67111</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C13824"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C32559"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.51018</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32072"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C32559"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C32564 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C32564">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33440"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C52727"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.49783</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C32564"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33440"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.43387</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C32564"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C52727"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C32572 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C32572"/>
+    
+
+
+    <!-- http://human.owl#NCI_C32592 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C32592">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32450"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.64078</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32450"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C32592"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C32656 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C32656">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12602"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32793"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.5987</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C32656"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32793"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.43691</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12602"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C32656"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C32662 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C32662"/>
+    
+
+
+    <!-- http://human.owl#NCI_C32674 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C32674"/>
+    
+
+
+    <!-- http://human.owl#NCI_C32679 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C32679">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12857"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33158"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.69498</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12857"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C32679"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.66843</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C32679"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33158"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C32696 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C32696">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12551"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33615"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.52205</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12551"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C32696"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.39502</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C32696"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33615"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C32700 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C32700"/>
+    
+
+
+    <!-- http://human.owl#NCI_C32743 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C32743">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12511"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C49314"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.58153</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12511"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C32743"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.48149</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C32743"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C49314"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C32746 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C32746"/>
+    
+
+
+    <!-- http://human.owl#NCI_C32754 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C32754">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12542"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.65529</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12542"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C32754"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C32765 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C32765">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12294"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32116"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.56806</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32116"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C32765"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.66488</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12294"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C32765"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C32766 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C32766"/>
+    
+
+
+    <!-- http://human.owl#NCI_C32776 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C32776"/>
+    
+
+
+    <!-- http://human.owl#NCI_C32793 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C32793">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33509"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.7002</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C32793"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33509"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C32828 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C32828"/>
+    
+
+
+    <!-- http://human.owl#NCI_C32835 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C32835">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33202"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.57127</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C32835"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33202"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C32849 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C32849">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33267"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.40893</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C32849"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33267"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C32852 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C32852">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C13180"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.80243</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C13180"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C32852"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C32889 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C32889">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C13147"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C49216"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.58291</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C13147"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C32889"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.5732</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C32889"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C49216"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C32916 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C32916">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32224"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.58777</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32224"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C32916"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C32964 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C32964"/>
+    
+
+
+    <!-- http://human.owl#NCI_C32971 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C32971">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33019"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.67868</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C32971"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33019"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C32978 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C32978"/>
+    
+
+
+    <!-- http://human.owl#NCI_C32983 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C32983"/>
+    
+
+
+    <!-- http://human.owl#NCI_C32995 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C32995">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33240"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.64032</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C32995"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33240"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C33006 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33006"/>
+    
+
+
+    <!-- http://human.owl#NCI_C33007 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33007">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12596"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C28401"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.49923</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12596"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C33007"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.61977</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C28401"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C33007"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C33019 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33019"/>
+    
+
+
+    <!-- http://human.owl#NCI_C33022 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33022">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32916"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.60943</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32916"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C33022"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C33046 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33046">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12725"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.5347</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12725"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C33046"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C33096 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33096">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12532"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.46823</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12532"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C33096"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C33106 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33106"/>
+    
+
+
+    <!-- http://human.owl#NCI_C33107 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33107">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12857"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12957"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.53122</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12957"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C33107"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.50691</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12857"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C33107"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C33117 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33117">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C49212"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.66932</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C33117"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C49212"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C33149 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33149"/>
+    
+
+
+    <!-- http://human.owl#NCI_C33158 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33158"/>
+    
+
+
+    <!-- http://human.owl#NCI_C33199 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33199"/>
+    
+
+
+    <!-- http://human.owl#NCI_C33202 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33202">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12617"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.50659</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12617"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C33202"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C33203 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33203"/>
+    
+
+
+    <!-- http://human.owl#NCI_C33233 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33233">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33240"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.64932</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C33233"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33240"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C33239 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33239">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32450"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.72726</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32450"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C33239"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C33240 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33240">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33476"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.5121</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C33240"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33476"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C33242 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33242">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C13824"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32450"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C49273"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.34573</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C33242"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C49273"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.47827</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C13824"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C33242"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.7116</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32450"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C33242"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C33267 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33267"/>
+    
+
+
+    <!-- http://human.owl#NCI_C33292 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33292"/>
+    
+
+
+    <!-- http://human.owl#NCI_C33297 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33297">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33879"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.46351</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C33297"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33879"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C33311 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33311">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C13722"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.74878</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C13722"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C33311"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C33313 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33313">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12532"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33297"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33870"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.53553</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12532"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C33313"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.55456</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C33313"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33870"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.58188</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33297"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C33313"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C33334 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33334"/>
+    
+
+
+    <!-- http://human.owl#NCI_C33358 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33358"/>
+    
+
+
+    <!-- http://human.owl#NCI_C33359 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33359">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32754"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.60935</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32754"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C33359"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C33385 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33385">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12768"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32674"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C49323"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.75497</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12768"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C33385"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.56331</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32674"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C33385"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.64953</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C33385"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C49323"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C33437 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33437">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12888"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32828"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.62408</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12888"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C33437"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.62199</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32828"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C33437"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C33440 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33440"/>
+    
+
+
+    <!-- http://human.owl#NCI_C33453 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33453">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33334"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.54046</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33334"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C33453"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C33470 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33470">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12588"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33615"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.58034</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12588"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C33470"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.40553</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C33470"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33615"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C33476 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33476"/>
+    
+
+
+    <!-- http://human.owl#NCI_C33488 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33488">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12350"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.68239</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12350"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C33488"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C33509 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33509">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C13092"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32127"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.60252</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32127"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C33509"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.52558</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C13092"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C33509"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C33544 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33544"/>
+    
+
+
+    <!-- http://human.owl#NCI_C33554 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33554">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C52827"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.67963</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C33554"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C52827"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C33571 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33571"/>
+    
+
+
+    <!-- http://human.owl#NCI_C33579 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33579"/>
+    
+
+
+    <!-- http://human.owl#NCI_C33596 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33596">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C13129"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.54213</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C13129"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C33596"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C33601 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33601"/>
+    
+
+
+    <!-- http://human.owl#NCI_C33615 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33615"/>
+    
+
+
+    <!-- http://human.owl#NCI_C33631 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33631">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12228"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32336"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32765"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.63064</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32765"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C33631"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.66601</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12228"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C33631"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.58699</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32336"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C33631"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C33665 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33665">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C53125"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.51706</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C33665"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C53125"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C33668 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33668">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12400"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.50807</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12400"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C33668"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C33703 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33703"/>
+    
+
+
+    <!-- http://human.owl#NCI_C33742 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33742">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33761"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.58315</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C33742"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33761"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C33748 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33748"/>
+    
+
+
+    <!-- http://human.owl#NCI_C33752 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33752"/>
+    
+
+
+    <!-- http://human.owl#NCI_C33761 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33761">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32275"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.40529</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32275"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C33761"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C33794 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33794">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32538"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32983"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.45872</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32538"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C33794"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.61321</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32983"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C33794"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C33805 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33805">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12467"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.53448</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12467"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C33805"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C33813 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33813">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C39686"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.3148</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C33813"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C39686"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C33853 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33853">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33668"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.72658</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33668"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C33853"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C33858 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33858"/>
+    
+
+
+    <!-- http://human.owl#NCI_C33870 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33870"/>
+    
+
+
+    <!-- http://human.owl#NCI_C33879 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33879">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32746"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.53156</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32746"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C33879"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C33882 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33882">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12774"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33106"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.60695</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33106"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C33882"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.70392</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12774"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C33882"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C33914 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33914">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32267"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C53061"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.54697</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32267"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C33914"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.49648</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C33914"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C53061"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C33926 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33926">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12938"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C13046"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33703"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.55561</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33703"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C33926"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.60784</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12938"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C33926"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.86052</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C13046"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C33926"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C33989 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C33989">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32045"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33544"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.6522</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33544"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C33989"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.38414</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32045"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C33989"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C38436 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C38436"/>
+    
+
+
+    <!-- http://human.owl#NCI_C38673 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C38673">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C52558"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.44722</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C38673"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C52558"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C39686 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C39686"/>
+    
+
+
+    <!-- http://human.owl#NCI_C41032 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C41032">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C13118"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.5311</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C13118"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C41032"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C41624 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C41624">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33006"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C38673"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.47047</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C38673"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C41624"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.53653</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33006"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C41624"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C42300 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C42300"/>
+    
+
+
+    <!-- http://human.owl#NCI_C43374 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C43374">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33748"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.54733</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33748"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C43374"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C45723 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C45723"/>
+    
+
+
+    <!-- http://human.owl#NCI_C48944 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C48944">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C13092"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.51115</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C13092"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C48944"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C49018 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C49018"/>
+    
+
+
+    <!-- http://human.owl#NCI_C49212 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C49212"/>
+    
+
+
+    <!-- http://human.owl#NCI_C49216 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C49216">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32086"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32420"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.53787</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32420"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C49216"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.53032</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32086"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C49216"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C49218 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C49218"/>
+    
+
+
+    <!-- http://human.owl#NCI_C49273 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C49273"/>
+    
+
+
+    <!-- http://human.owl#NCI_C49314 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C49314">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C52744"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.4656</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C49314"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C52744"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C49323 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C49323">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33571"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.6362</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33571"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C49323"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C49324 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C49324">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12411"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.59347</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12411"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C49324"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C49482 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C49482"/>
+    
+
+
+    <!-- http://human.owl#NCI_C49601 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C49601">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C13325"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33199"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.45348</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C13325"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C49601"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.56415</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33199"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C49601"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C49767 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C49767">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12532"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32662"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C42300"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.63474</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12532"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C49767"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.49773</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C42300"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C49767"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.56979</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32662"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C49767"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C52558 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C52558">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32793"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.69726</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32793"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C52558"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C52685 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C52685">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C52921"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.68195</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C52685"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C52921"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C52688 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C52688">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12419"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.53324</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12419"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C52688"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C52702 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C52702">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C52727"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.61801</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C52702"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C52727"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C52727 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C52727">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12333"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32674"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.55734</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32674"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C52727"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.54828</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12333"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C52727"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C52744 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C52744"/>
+    
+
+
+    <!-- http://human.owl#NCI_C52765 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C52765">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12597"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.74341</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12597"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C52765"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C52793 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C52793">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12996"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.4732</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12996"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C52793"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C52796 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C52796">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32190"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C49273"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.60137</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32190"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C52796"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.4015</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C49273"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C52796"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C52812 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C52812">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C17008"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.66557</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C17008"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C52812"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C52815 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C52815">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12605"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.55856</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12605"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C52815"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C52827 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C52827"/>
+    
+
+
+    <!-- http://human.owl#NCI_C52864 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C52864">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C17008"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.50903</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C17008"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C52864"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C52921 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C52921"/>
+    
+
+
+    <!-- http://human.owl#NCI_C52950 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C52950">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12467"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33794"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C52685"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.58432</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12467"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C52950"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.46966</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33794"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C52950"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.53703</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C52685"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C52950"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C52975 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C52975">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12588"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.49988</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12588"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C52975"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C53020 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C53020">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32572"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33203"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.27496</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32572"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C53020"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.66104</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33203"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C53020"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C53043 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C53043">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C53061"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.59309</disponte:probability>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C53043"/>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C53061"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C53056 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C53056">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12596"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32983"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33158"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.43667</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12596"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C53056"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.47094</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32983"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C53056"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.63611</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33158"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C53056"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C53060 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C53060">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32072"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.48122</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32072"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C53060"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C53061 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C53061"/>
+    
+
+
+    <!-- http://human.owl#NCI_C53125 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C53125"/>
+    
+
+
+    <!-- http://human.owl#NCI_C53128 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C53128">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12857"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.63365</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12857"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C53128"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C53156 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C53156">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32190"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.5167</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32190"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C53156"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://human.owl#NCI_C53170 -->
+
+    <owl:Class rdf:about="http://human.owl#NCI_C53170">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12333"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32278"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.55791</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32278"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C53170"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.63428</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12333"/>
+        <owl:annotatedSource rdf:resource="http://human.owl#NCI_C53170"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#ObsoleteClass -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32506"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.59582</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32506"/>
+        <owl:annotatedSource rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing">
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12249"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12294"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12535"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12542"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12605"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12625"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12717"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12806"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12865"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C12938"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C13063"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C13118"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C28401"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32420"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C32539"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33239"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33453"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33488"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33571"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33665"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33742"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33882"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C33914"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C43374"/>
+        <rdfs:subClassOf rdf:resource="http://human.owl#NCI_C52685"/>
+    </owl:Class>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.46305</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C13118"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.57249</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33571"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.54584</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33742"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.54582</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33914"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.90576</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12535"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.36632</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12605"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.59552</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12249"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.44739</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C13063"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.56357</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12625"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.58016</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12717"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.6077</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33239"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.65382</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12294"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.55857</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12542"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.50345</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33882"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.56152</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C28401"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.51205</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33488"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.57982</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C43374"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.50613</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33665"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.62065</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32539"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.47264</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C33453"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.57252</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C52685"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.53529</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C32420"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.62016</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12806"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.42782</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12938"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <disponte:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.52155</disponte:probability>
+        <owl:annotatedTarget rdf:resource="http://human.owl#NCI_C12865"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Axiom>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.1.0.1602) http://owlapi.sourceforge.net -->
+
